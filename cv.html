@@ -41,6 +41,24 @@
     }
     .cv-detail em { color: var(--text-muted); font-style: normal; font-size: 0.82rem; }
 
+    /* Conference items: comma-separated inline, wrap naturally */
+    .conf-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0;
+      row-gap: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .conf-list li { display: inline; }
+    /* Separator dot between items */
+    .conf-list li + li::before {
+      content: ' · ';
+      color: var(--text-muted);
+      margin: 0 0.2em;
+    }
+
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -74,6 +92,9 @@
     .cv-download:hover { color: var(--text); border-color: var(--accent); }
 
     @media (max-width: 600px) {
+      nav { padding: 1.25rem; gap: 0.75rem; align-items: flex-start; }
+      .nav-links { flex-wrap: wrap; gap: 0.5rem 1.1rem; }
+      main { padding: 2.5rem 1.25rem 5rem; }
       .cv-entry { grid-template-columns: 80px 1fr; gap: 0 1rem; }
       .skills-grid { grid-template-columns: 1fr; }
     }
@@ -93,9 +114,6 @@
 </nav>
 <main>
   <h1 class="page-h1">CV</h1>
-  <!-- <a class="cv-download" href="https://drive.google.com/file/d/1bRcd7HvzXUFOIE7GCYgrOO4Phdae4-QA/view" target="_blank">
-    ↗ Download full CV (PDF)
-  </a> -->
 
   <!-- WORK EXPERIENCE -->
   <div class="cv-section">
@@ -171,7 +189,6 @@
       <span class="cv-year">2015</span>
       <div class="cv-detail">
         <strong>University of Nottingham, Malaysia Campus</strong>
-        <!-- <em>Semenyih, Malaysia and Nottingham, United Kingdom</em> -->
         BSc (Hons) Economics
       </div>
     </div>
@@ -180,56 +197,79 @@
   <!-- CONFERENCES -->
   <div class="cv-section">
     <h2>Conference Presentations</h2>
+
     <div class="cv-entry">
       <span class="cv-year">2026</span>
       <div class="cv-detail">
-        European Population Conference (Bologna)
+        <ul class="conf-list">
+          <li>European Population Conference (Bologna)</li>
+        </ul>
       </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2025</span>
       <div class="cv-detail">
-        23rd European Network for the Sociological and Demographic Study of Divorce — poster session (Bellaterra)
+        <ul class="conf-list">
+          <li>23rd European Network for the Sociological and Demographic Study of Divorce — poster session (Bellaterra)</li>
+        </ul>
       </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2024</span>
       <div class="cv-detail">
-        51st Seminar of the European Group of Risk and Insurance Economists (Hamburg)<br>
-        Annual Meeting of the American Risk and Insurance Association (Denver)
+        <ul class="conf-list">
+          <li>51st Seminar of the European Group of Risk and Insurance Economists (Hamburg)</li>
+          <li>Annual Meeting of the American Risk and Insurance Association (Denver)</li>
+        </ul>
       </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2023</span>
       <div class="cv-detail">
-        Annual Meeting of the American Risk and Insurance Association (Washington DC)
+        <ul class="conf-list">
+          <li>Annual Meeting of the American Risk and Insurance Association (Washington DC)</li>
+        </ul>
       </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2022</span>
       <div class="cv-detail">
-        Annual Meeting of the American Risk and Insurance Association (Long Beach)<br>
-        Deutscher Verein für Versicherungswissenschaft Jahrestagung (virtual)
+        <ul class="conf-list">
+          <li>Annual Meeting of the American Risk and Insurance Association (Long Beach)</li>
+          <li>Deutscher Verein für Versicherungswissenschaft Jahrestagung (virtual)</li>
+        </ul>
       </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2021</span>
-      <div class="cv-detail">Grüneburgseminar (Frankfurt)</div>
+      <div class="cv-detail">
+        <ul class="conf-list">
+          <li>Grüneburgseminar (Frankfurt)</li>
+        </ul>
+      </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2019</span>
-      <div class="cv-detail">World Bank Half-Baked Seminar Series (Kuala Lumpur)</div>
+      <div class="cv-detail">
+        <ul class="conf-list">
+          <li>World Bank Half-Baked Seminar Series (Kuala Lumpur)</li>
+        </ul>
+      </div>
     </div>
 
     <div class="cv-entry">
       <span class="cv-year">2018</span>
-      <div class="cv-detail">11th International Malaysian Studies Conference (Langkawi)</div>
+      <div class="cv-detail">
+        <ul class="conf-list">
+          <li>11th International Malaysian Studies Conference (Langkawi)</li>
+        </ul>
+      </div>
     </div>
   </div>
 
