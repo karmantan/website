@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f0f;
+  --bg-raised: #161616;
+  --text: #e8e4dc;
+  --text-muted: #7a7570;
+  --accent: #8b2635;
+  --accent-faded: rgba(139,38,53,0.1);
+  --border: rgba(232,228,220,0.08);
+  --max: 680px;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.nav-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links { display: flex; gap: 1.8rem; list-style: none; }
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+
+/* MAIN */
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 4rem 2rem 7rem;
+}
+
+/* HOME */
+.home-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+.home-bio {
+  font-size: 0.94rem;
+  color: #b8b4ac;
+  line-height: 1.85;
+  margin-bottom: 3rem;
+}
+.home-bio a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--border); }
+.home-bio a:hover { text-decoration-color: var(--accent); }
+
+.home-section { margin-bottom: 2.2rem; }
+.home-section h2 {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+.home-section p { font-size: 0.93rem; color: #b0aca4; line-height: 1.85; }
+.home-section a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--border); }
+
+.disclaimer {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  opacity: 0.5;
+}
+
+/* PAGE HEADER */
+.page-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+.page-desc {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+/* RESEARCH */
+.research-section { margin-bottom: 2.8rem; }
+.research-section h2 {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+.paper {
+  border-top: 1px solid var(--border);
+  padding: 1.4rem 0;
+}
+.paper:last-child { border-bottom: 1px solid var(--border); }
+.paper-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+.paper-title a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--border); }
+.paper-title a:hover { text-decoration-color: var(--accent); }
+.paper-meta { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
+.paper-status {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  margin-top: 0.4rem;
+}
+
+/* CV */
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+  margin-bottom: 1.5rem;
+  transition: text-decoration-color 0.2s;
+}
+.cv-link:hover { text-decoration-color: var(--accent); }
+
+/* CONTACT */
+.contact-item {
+  border-top: 1px solid var(--border);
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  color: #b0aca4;
+}
+.contact-item:last-child { border-bottom: 1px solid var(--border); }
+.contact-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+.contact-item a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--border); }
+.contact-item a:hover { text-decoration-color: var(--accent); }
+
+/* COOKING GRID */
+.cooking-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+.cooking-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: brightness(0.88) saturate(0.9);
+  border-radius: 2px;
+  transition: filter 0.3s;
+}
+.cooking-grid img:hover { filter: brightness(1) saturate(1); }
+.cooking-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+/* LESSON LIST */
+.lesson-list { list-style: none; }
+.lesson-item {
+  position: relative;
+  border-top: 1px solid var(--border);
+  padding: 1.6rem 0 1.6rem 4rem;
+  transition: background 0.2s, padding 0.15s;
+}
+.lesson-item:last-child { border-bottom: 1px solid var(--border); }
+.lesson-item:hover {
+  background: var(--accent-faded);
+  margin: 0 -1.2rem;
+  padding-left: 5.2rem;
+  padding-right: 1.2rem;
+}
+.lesson-number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 2.6rem;
+  color: var(--accent);
+  opacity: 0.2;
+  line-height: 1;
+  user-select: none;
+  transition: opacity 0.2s;
+}
+.lesson-item:hover .lesson-number { opacity: 0.55; }
+.lesson-item a { text-decoration: none; display: block; }
+.lesson-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+.lesson-date { font-size: 0.73rem; color: var(--text-muted); }
+
+/* INDIVIDUAL LESSON */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  margin-bottom: 3rem;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--text); }
+.back-link::before { content: '←'; }
+
+.lesson-header {
+  margin-bottom: 2.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.lesson-num-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.lesson-header blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.25rem, 3.5vw, 1.65rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--text);
+  border-left: 2px solid var(--accent);
+  padding-left: 1.4rem;
+}
+.lesson-date-full {
+  display: block;
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+.lesson-body { font-size: 0.96rem; line-height: 1.9; color: #c9c5bc; }
+.lesson-body p { margin-bottom: 1.1rem; }
+
+/* ART SLOT */
+.art-slot { margin: 2.5rem 0; }
+.art-slot img {
+  max-width: 100%;
+  border-radius: 2px;
+  filter: grayscale(15%) brightness(0.82);
+}
+.art-caption { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.4rem; font-style: italic; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 1rem; }
+  .nav-links { gap: 1rem; flex-wrap: wrap; }
+  .cooking-grid { grid-template-columns: 1fr; }
+  .lesson-item { padding-left: 3rem; }
+  .lesson-item:hover { padding-left: 4rem; margin: 0 -0.8rem; padding-right: 0.8rem; }
+  .lesson-number { font-size: 2rem; }
+}
