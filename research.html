@@ -5,6 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Kar Man Tan</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .research-section { margin-bottom: 3rem; }
+    .research-section h2 {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      font-weight: 400;
+    }
+    .paper {
+      border-top: 1px solid var(--border);
+      padding: 1.6rem 0;
+    }
+    .paper:last-child { border-bottom: 1px solid var(--border); }
+    .paper-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+    .paper-title a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--border);
+      transition: text-decoration-color 0.2s;
+    }
+    .paper-title a:hover { text-decoration-color: var(--accent); }
+    .paper-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+    .paper-abstract {
+      font-size: 0.86rem;
+      color: #b0aca4;
+      line-height: 1.85;
+    }
+    .paper-abstract a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--border);
+    }
+    .paper-abstract a:hover { text-decoration-color: var(--accent); }
+    .paper-status {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-bottom: 0.8rem;
+    }
+    .ssrn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      margin-top: 1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .ssrn-link:hover { color: var(--text); border-color: var(--accent); }
+  </style>
 </head>
 <body>
 <nav>
@@ -21,33 +95,88 @@
 <main>
   <h1 class="page-h1">Research</h1>
 
+  <!-- PUBLICATIONS -->
   <div class="research-section">
     <h2>Publications</h2>
     <div class="paper">
-      <p class="paper-title">Testing for loss severity: Impact on loss reduction</p>
-      <p class="paper-meta">Risk Management and Insurance Review, 2025</p>
+      <p class="paper-title">
+        <a href="https://onlinelibrary.wiley.com/doi/10.1111/rmir.70000" target="_blank">
+          Testing for loss severity: Impact on loss reduction
+        </a>
+      </p>
+      <p class="paper-meta">Risk Management and Insurance Review, 28(1), 150–180. 2025.</p>
     </div>
   </div>
 
+  <!-- WORKING PAPERS -->
   <div class="research-section">
     <h2>Working Papers</h2>
+
     <div class="paper">
-      <p class="paper-title">How does information on individual risk affect the demand for insurance</p>
+      <p class="paper-title">
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5071005" target="_blank">
+          Genetic testing: Assessing severity risk and implications for health insurance
+        </a>
+      </p>
+      <p class="paper-meta">With Helmut Gründl</p>
+      <p class="paper-abstract">
+        We theoretically analyze how genetic testing to determine risk severity impacts health insurance purchases under various information regimes. If claims payments can exceed actual loss, individuals get tested and choose appropriate contracts, resulting in efficient outcomes. If insurers only offer a contract covering average loss, testing is forgone, leading to inefficiencies: high-risk individuals are under-insured, and low-risk individuals are over-insured. When contracts limit payments to actual losses and insurers can observe test results, people avoid testing and purchase full coverage, causing high-risk individuals to underpay and low-risk individuals to overpay for insurance. If test results are unobservable, adverse selection requires contract designs to eliminate it, achieving efficiency. Our study suggests encouraging the sharing of genetic test results for contracts exceeding actual loss to ensure adequate coverage. For contracts limited to actual loss, privacy protections are essential to avoid discrimination and ensure fair pricing.
+      </p>
+    </div>
+
+    <div class="paper">
+      <p class="paper-title">
+        <a href="https://drive.google.com/file/d/1JxIk_M579lXx3aAUFmfj4rqgZ6ruyILs/view?usp=drive_link" target="_blank">
+          How does information on individual risk affect the demand for insurance
+        </a>
+      </p>
       <p class="paper-meta">With Volker Benndorf</p>
       <span class="paper-status">Major revision — Theory and Decision</span>
-    </div>
-    <div class="paper">
-      <p class="paper-title">Genetic testing and health insurance</p>
-      <p class="paper-meta">With Helmut Gründl</p>
+      <p class="paper-abstract">
+        In our <a href="https://github.com/karmantan/informationinsuranceexp" target="_blank">experiment</a>, we examine how ambiguity and the cognitive load required to process information affects the accuracy of risk perception and insurance decisions. With information on true loss probabilities, individuals are accurate but least willing to pay for insurance. To address the low willingness to pay, we introduced ambiguity by only sharing average loss probabilities and cognitive load, by requiring individuals to exert effort in assessing risk factors. Both measures lowered accuracy without affecting willingness to pay. We then restricted the amount of cognitive load by requiring individuals to only assess factors which increased risk. This improved the accuracy of guesses and significantly increased the willingness to pay. Providing information on true loss probabilities can help prevent over-insurance while requiring individuals to assess factors which increase risk can help prevent under-insurance.
+      </p>
     </div>
   </div>
 
+  <!-- POLICY PAPERS -->
   <div class="research-section">
-    <h2>Policy Work</h2>
+    <h2>Policy Papers</h2>
+
     <div class="paper">
-      <p class="paper-meta">2 policy papers and 1 book from the Khazanah Research Institute (KRI), Malaysia. Pre-PhD.</p>
+      <p class="paper-title">
+        <a href="https://www.krinstitute.org/assets/contentMS/img/template/editor/Discussion%20Paper_Behind%20The%20Blackboard.pdf" target="_blank">
+          Behind the Blackboard: How basic indicators mask gaps in quality of education
+        </a>
+      </p>
+      <p class="paper-meta">With Alyssa Chua Lee-Yen, Alia Muhammad Radzi and Rachel Gong. Khazanah Research Institute.</p>
+    </div>
+
+    <div class="paper">
+      <p class="paper-title">
+        <a href="https://www.krinstitute.org/assets/contentMS/img/template/editor/Technical%20Note%201_20181018.pdf" target="_blank">
+          More or less equal? Accounting for missing top and bottom incomes in measurement of income inequality in Malaysia
+        </a>
+      </p>
+      <p class="paper-meta">With Allen Ng. Khazanah Research Institute.</p>
     </div>
   </div>
+
+  <!-- BOOKS -->
+  <div class="research-section">
+    <h2>Books</h2>
+    <div class="paper">
+      <p class="paper-title">
+        <a href="https://www.krinstitute.org/Publications-@-The_State_of_Households_2018_-_Different_Realities.aspx" target="_blank">
+          The State of Households 2018: Different Realities
+        </a>
+      </p>
+      <p class="paper-meta">With Allen Ng, Adam Manaf Mohamed Firouz, Jarud Romadan Khalidi, Musaddiq Adam Muhtar, Siti Aiysyah Tumin, Tan Theng Theng and Tan Zhai Gen. Khazanah Research Institute.</p>
+    </div>
+  </div>
+
+  <a class="ssrn-link" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6117558" target="_blank">↗ SSRN Author Page</a>
+
+  <p class="disclaimer">All thoughts are my own.</p>
 </main>
 </body>
 </html>
