@@ -41,14 +41,23 @@
     }
     .cv-detail em { color: var(--text-muted); font-style: normal; font-size: 0.82rem; }
 
-    /* Conference items: stacked, one per line */
+    /* Conference items: comma-separated inline, wrap naturally */
     .conf-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0;
+      row-gap: 0;
       list-style: none;
       padding: 0;
       margin: 0;
     }
-    .conf-list li { display: block; }
-    .conf-list li + li { margin-top: 0.4rem; }
+    .conf-list li { display: inline; }
+    /* Separator dot between items */
+    .conf-list li + li::before {
+      content: ' · ';
+      color: var(--text-muted);
+      margin: 0 0.2em;
+    }
 
     .skills-grid {
       display: grid;
