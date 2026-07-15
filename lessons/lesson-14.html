@@ -4,38 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #14 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #14</span>
     <blockquote>Listen to the emo edgelord</blockquote>
     <span class="lesson-date-full">2026.01.01</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="lesson-body">
+
+<div class="lesson-body">
       <p>Another Takasugi post to start the year. In Gintama, the Yorozuya receive a postcard from Takasugi which says "Happy new year. I will be destroying everything again this year". This is one variation of Takasugi's "I simply destroy" quotes. My favorite is "I simply destroy this rotten world". Takasugi was really onto something. In our rotten world, <a href="https://www.aljazeera.com/news/2025/12/31/which-aid-groups-is-israel-banning-from-gaza-now-and-what-will-it-mean">37 aid organizations have been banned from operating in Gaza</a> as of today for failing to comply with "transparency and security requirements". What? Do we really think aid workers, OVERWHELMED AND EXHAUSTED, from death and destruction are strategizing how to overthrow one of the most well equipped militaries in the world? They're just trying to survive while using whatever very very scarce resources to save as many lives as possible. It's already dire now, and without aid? This rotten world.</p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

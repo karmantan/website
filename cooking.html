@@ -12,6 +12,10 @@
 </head>
 <body>
   <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
     <aside>
       <a class="nav-name" href="index.html">Kar Man<br>Tan</a>
       <nav><ul class="nav-links">

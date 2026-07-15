@@ -4,41 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #2 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #2</span>
     <blockquote>If you allow people to worry less and relax more, they will become kind-hearted mentors</blockquote>
     <span class="lesson-date-full">2025.10.23</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="lesson-body">
+
+<div class="lesson-body">
       <p>This lesson is directly inspired by episode 3 of Ginpachi-sensei - "When the quiet kid cracks a joke, it's hard to react, but you can't ignore it, so all you can do is laugh". The quiet kid in question is Takasugi, although he is not a typical quiet kid if you know his 'dark history' (Ginpachi-sensei refer to the events of Gintama as dark history lol). Takasugi was first introduced as a villain who was the leader of the Kiheitai, a terrorist group whose objective is to simply destroy the world. Those familiar with anime tropes would have guessed by now that Takasugi has a somewhat depressing backstory. He found a home in Shouka Sonjuku, a school set up by Yoshida Shouyou-sensei to educate poor kids and orphans. Shouyou clearly left a huge impression by helping Takasugi find his bushido. However, Shouyou was arrested, and Takasugi, along with Gintoki and Katsura, went to war against the hated government who took his beloved sensei. The war ended in defeat and Takasugi was forced to watch his sensei executed by his close friend (also lost his eye in the process). Takasugi vowed revenge and at times, even sided with the government he hates to achieve his objective. He was so full of hatred and often directed his hatred at the wrong people. At some point, after fighting Gintoki, he become something of an anti-hero. Seeing how Gintoki is trying his best to survive in this cursed world by establishing new bonds despite being the one who actually suffered the most, I guess something clicked in Takasugi's mind. Takasugi eventually died while saving the world.</p>
       <p>The long-winded paragraph above is just trying to say that this kind of trauma can turn even the kindest person into a monster. Ginpachi-sensei, until now, doesn't seem to be as high stakes as the end of Gintama so we can think of it as some sort of alternate universe where all characters get to relax and have happy lives. Takasugi is an immensely popular character, so obviously he has to be re-introduced in Ginpachi-sensei. I can imagine that it is pretty challenging to fit such a serious character into a jolly series, especially one like Takasugi, who exudes final boss energy everytime he comes on screen with a badass theme song. His entrance in Ginpachi-sensei was not any less badass, but he got to make a weird corny joke and be silly for a bit. </p>
       <p>Perhaps the jump from Gintama to Ginpachi-sensei is too large for Takasugi. Somehow, I projected an intermediate jump on Shinmon Benimaru of Fire Force, who bears a striking resemblance to Takasugi in terms of physical appearance and brooding personality. I don't know yet if Benimaru has such a depressing backstory, but the world in Fire Force is rather post-apocalyptic, so obviously Benimaru isn't just sitting around and chilling. Benimaru, however, seems to have found a sort of community in Asakusa. The Asakusa residents trust and rely on him which kind of allows him to relax a little, although I'm not sure if he worries less. Benimaru seems like a kind-hearted person who may seem reluctant to mentor others, but does it anyway (and looks like he enjoys it). </p>
       <p>It's also possible to extrapolate the lesson into the real world. Everyone is struggling to survive and hard work doesn't look like it's being rewarded. Tempers are short and people are less willing to exert effort in being helpful, because that costs time, time which is re-directed from survival activities. If the world is less oligopolistic (power less concentrated), then it would be less extractive. Maybe then, everyone can chill out and find the time to be a kind mentor.</p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

@@ -4,40 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #26 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #26</span>
     <blockquote>You don't need to pay for comedy shows, just get on public transit</blockquote>
     <span class="lesson-date-full">2026.06.22</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="lesson-body">
+
+<div class="lesson-body">
       <p>The heatwave is particularly brutal today. I was on the train from Wiesbaden and sat down as usual for the (minimum) hour long commute. The airconditioning was barely working. Although I had a neck fan, it wasn't enough, so I just tried to will the heat away with pure willpower. It worked at some point, until the station just before Frankfurt Main Station. This woman got on the train with her friend, and before I could make space for her to sit, she said excuse me aggressively to me. I can't teleport. We were ten minutes from the terminal stop, why not stand anyway? Why would she choose to sit next to a human waterfall? </p>
       <p>Then she started talking to her friend while crying. That piqued my interest. It turns out that she is in a situationship. She's upset that she does couple activities with her situationship and that she's hurt. It also turns out she isn't hurt by the situationship itself, but she's upset that her non-boyfriend prioritizes his friends above her. She was apparently there for the him when his friends weren't. Meanwhile, while all of this was happening, the friend in the train was stroking her lap inappropriately. I am secretly (not that secretly LOL) enjoying her pain since she decided to trap the human waterfall.</p>
       <p>Was this conversation appropriate for public transit? Probably not, but I bet everybody was grateful for that bit of juicy gossip to distract from the heatwave. Please keep doing stupid harmless things and please keep announcing it in public.</p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

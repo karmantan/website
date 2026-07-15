@@ -4,41 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #8 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #8</span>
     <blockquote>Some jobs are meaningful but using the word "job" may be a stretch</blockquote>
     <span class="lesson-date-full">2025.11.29</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="art-slot">
+<div class="art-slot">
     <img src="../images/lessons/kyoto_shinsengumi_lesson_8.png" alt="">
   </div>
-  <div class="lesson-body">
+<div class="lesson-body">
       <p>In episode 8 of Ginpachi-sensei, Class 3-Z goes to Kyoto on a school trip. Hanako (originally from Osaka in the main Gintama series) is a transfer student who wanted to get rid of her ties to delinquents in Kyoto. Before leaving Kyoto, she left multiple fecal presents for the lead delinquent. Naturally, her old life catches up. The lead delinquent threatens to hurt Hanako's classmates, but these new classmates were a loyal (and violent) bunch. They were all rallied by Hijikata (of Shinsengumi fame in the original series and in real life) and beat up the delinquets while dressed as maiko. The Shinsengumi (Kondou, Hijikata, Okita, Yamazaki) are in the disciplinary committee in the Ginpachi-sensei series. An equivalent would be prefects. In my old school, prefects just followed orders and imposed draconian fines on students for breaking nonsense rules. They will never have your back. I am still bitter about this although I do realize the prefects were also just children back then. Then, I watch Ginpachi-sensei and think this is a far cry from the Shinsengumi prefects in Ginpachi-sensei who broke rules to protect their classmate. I am aware it's fiction, but maybe we can strive for these ideals a little. 知らんけど。Side note: when the Shinsengumi showed up in their uniforms (like real life Shinsengumi haori and not the uniform in Gintama), I got goosebumps and cried. </p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

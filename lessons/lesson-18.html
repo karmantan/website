@@ -4,38 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #18 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #18</span>
     <blockquote>People parrot whatever others say</blockquote>
     <span class="lesson-date-full">2026.03.01</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="lesson-body">
+
+<div class="lesson-body">
       <p>I haven't written anything in February due to laziness and traveling to Japan. Prior to Japan, I feel like all I complain about is public transport anyway so there's nothing new. Two of the cities I visited this time are Sapporo and Tokyo. It's natural to draw comparisons and, before going, you read that people in Sapporo tend to be nicer. Of course, you need to take Reddit comments with a grain of salt because we lack context, i.e. who exactly did Redditors interact with, how do the Redditors look like, what language did they speak etc. I find that there aren't major differences in the people I interacted with in both cities, like some are nicer, some are neutral, some are more stressed out (I did find that Kyoto bus drivers are comparatively chattier and konbini workers in Hakodate seem to use a harsh tone with slower people). I saw a post on Reddit shortly after my visit. The post was from a guy who lived in Sapporo asking how people's experiences were compared to Tokyo. The OP also asked where people are from, how many times they've been to Japan and the level of Japanese knowledge, so there are some controls. Yet, almost every single comment was about how people in Sapporo are nicer and not in a rush. I wonder if this was some pre-conceived notion that people had and they reinforced this prior belief that they had with experiences which confirmed their theory. It would be great if there are objective measures of "nice" or "chill", because I feel like interactions took about the same time in both cities. </p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

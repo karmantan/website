@@ -4,43 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #11 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
+  <div class="site-layout">
+  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
+    <aside>
+      <a class="nav-name" href="../index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../research.html">RESEARCH</a></li>
+        <li><a href="../cooking.html">COOKING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../hobby.html" class="active">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="lesson-page">
+        <a class="back-link" href="../hobby.html">← All lessons</a>
+<header class="lesson-header">
     <span class="lesson-num-label">Lesson #11</span>
     <blockquote>Sometimes you just gotta duke it out, sometimes you gotta be angry at everything</blockquote>
     <span class="lesson-date-full">2025.12.16</span>
   </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
-    <img src="../images/art/your-image.jpg" alt="">
-    <p class="art-caption">Caption</p>
-  </div>
-  -->
-  <div class="art-slot">
+<div class="art-slot">
     <img src="../images/lessons/takasugi_lesson_11.jpg" alt="">
   </div>
-  <div class="lesson-body">
+<div class="lesson-body">
       <p>I feel like I talk about Takasugi a lot. To be fair though, Ginpachi-sensei gives Takasugi a lot of dialog. The conflict between Yato High and Gintama High seemingly started because some Yato High delinquents were bothering girls in Gintama High. This was glossed over, and eventually delinquents of both schools just starting picking fights with each other randomly, eventually involving the one of the strongest characters, Kamui, who had nothing to do with the conflict, but loves fighting. So, a challenged was issued to the big delinquent of Gintama High, Takasugi. Takasugi barely has any supporters although Class 3-Z came to his aid on flimsy reasons. An all out brawl ensued. I think some people are just itching for a fight (*cough* Kagura *cough*) and there was no winner, but everyone seemed happy just duking it out. It reminds me of Wind Breaker and also the call back to Gintama Kabukicho Four Devas Arc where Doromizo Jirochou and Terada Tatsugorou just beat each other up to express their emotions. I get the point that words and arguments are sometimes exhausting, so fight it out and feel better. </p>
       <p>Now to the more important bit. In <a href="lesson-2.html" style="color: var(--text); text-decoration: underline; text-underline-offset: 3px;">Lesson #2</a>, I was ranting on and on about how Takasugi gets to chill out for a sec. I take it back. The 11 episodes of Ginpachi-sensei felt a little off compared to Gintama and Takasugi locked onto this. The speech at the end of the fight to Ginpachi lets the audience know that the producers know that the new anime is a little weird. It's weird for Takasugi to be in a low stakes anime, it's weird that he's a student while Ginpachi (Gintoki) is a teacher, it's weird to be forced to play these alternative roles. Takasugi's story ended when he died in Gintama and he's upset that he's revived in this high school anime. And he's right. I appreciate the character even more for challenging the fundamental premise of the entire anime. That's rebellion I can get behind and we all should honestly be angry at way more things and challenge the fundamental structure of society. </p>
       <p>This episode is truly a love letter to fans of Gintama. Takasugi hiding in Elizabeth's costume while Kamui slicing it in half is another throwback to the Benizakura arc with Zura hiding in Elizabeth's costume while Takasugi slices him. Heck, even the soundtrack during this scene is DOES' Shura. </p>
   </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
