@@ -3,322 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV — Kar Man Tan</title>
-  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
   <link rel="icon" type="image/png" href="images/logo-20th-color.png">
-  <style>
-    .cv-section { margin-bottom: 3rem; }
-    .cv-section h2 {
-      font-size: 0.7rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.2rem;
-      font-weight: 400;
-    }
-    .cv-entry {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 0 1.5rem;
-      border-top: 1px solid var(--border);
-      padding: 1.2rem 0;
-    }
-    .cv-entry:last-child { border-bottom: 1px solid var(--border); }
-    .cv-year {
-      font-size: 0.78rem;
-      color: var(--accent);
-      font-weight: 500;
-      padding-top: 0.1rem;
-      white-space: nowrap;
-    }
-    .cv-detail { font-size: 0.88rem; color: #b8b4ac; line-height: 1.7; }
-    .cv-detail strong {
-      display: block;
-      color: var(--text);
-      font-weight: 400;
-      margin-bottom: 0.15rem;
-      font-size: 0.92rem;
-    }
-    .cv-detail em { color: var(--text-muted); font-style: normal; font-size: 0.82rem; }
-
-    /* Conference items: stacked, one per line */
-    .conf-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .conf-list li { display: block; }
-    .conf-list li + li { margin-top: 0.4rem; }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      border-top: 1px solid var(--border);
-      padding-top: 1.2rem;
-    }
-    .skill-group h3 {
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 0.6rem;
-      font-weight: 400;
-    }
-    .skill-group p { font-size: 0.86rem; color: #b8b4ac; line-height: 1.8; }
-
-    .cv-download {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      border: 1px solid var(--border);
-      padding: 0.5rem 1rem;
-      border-radius: 2px;
-      margin-bottom: 3rem;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .cv-download:hover { color: var(--text); border-color: var(--accent); }
-
-    @media (max-width: 600px) {
-      nav { padding: 1.25rem; gap: 0.75rem; align-items: flex-start; }
-      .nav-links { flex-wrap: wrap; gap: 0.5rem 1.1rem; }
-      main { padding: 2.5rem 1.25rem 5rem; }
-      .cv-entry { grid-template-columns: 80px 1fr; gap: 0 1rem; }
-      .skills-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="cv.html" class="active">CV</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="cooking.html">Cooking</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="hobby.html">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <h1 class="page-h1">CV</h1>
-
-  <!-- WORK EXPERIENCE -->
-  <div class="cv-section">
-    <h2>Work Experience</h2>
-
-    <div class="cv-entry">
-      <span class="cv-year">2025 —</span>
-      <div class="cv-detail">
-        <strong>Federal Institute for Population Research</strong>
-        <em>Wiesbaden, Germany</em>
-        Postdoctoral Researcher
+  <div class="site-layout">
+    <aside>
+      <a class="nav-name" href="index.html">Kar Man<br>Tan</a>
+      <nav><ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="research.html">RESEARCH</a></li>
+        <li><a href="cooking.html">COOKING</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="hobby.html">HOBBY</a></li>
+      </ul></nav>
+    </aside>
+    <main>
+      <div class="cv-wrap">
+        <h1 class="page-h1">CV</h1>
+        <div class="cv-section">
+          <p class="cv-label">Work Experience</p>
+                    <div class="cv-entry"><span class="cv-year">Apr 2025 —</span><div class="cv-detail"><strong>Federal Institute for Population Research</strong><em>Wiesbaden, Germany</em>Postdoctoral Researcher</div></div>
+                    <div class="cv-entry"><span class="cv-year">Apr 2024 — Apr 2025<br><br>Jan 2020 — Apr 2024</span><div class="cv-detail"><strong>Goethe Universität Frankfurt</strong><em>Frankfurt, Germany</em>Postdoctoral Researcher<br><br>Researcher &amp; Teaching Assistant</div></div>
+                    <div class="cv-entry"><span class="cv-year">Jun 2024 — Jul 2024</span><div class="cv-detail"><strong>The World Bank</strong><em>Kuala Lumpur, Malaysia (remote)</em>Short Term Consultant, EAP Chief Economist Unit</div></div>
+                    <div class="cv-entry"><span class="cv-year">Oct 2017 — Aug 2018</span><div class="cv-detail"><strong>Khazanah Research Institute</strong><em>Kuala Lumpur, Malaysia</em>Research Assistant</div></div>
+        </div>
+        <div class="cv-section">
+          <p class="cv-label">Education</p>
+                    <div class="cv-entry"><span class="cv-year">Oct 2018 — Apr 2024</span><div class="cv-detail"><strong>Goethe University Frankfurt</strong><em>Frankfurt, Germany</em>PhD in Economics</div></div>
+                    <div class="cv-entry"><span class="cv-year">Sep 2015 — Sep 2016</span><div class="cv-detail"><strong>University College London</strong><em>London, United Kingdom</em>MSc Economics</div></div>
+                    <div class="cv-entry"><span class="cv-year">Sep 2012 — Jul 2015</span><div class="cv-detail"><strong>University of Nottingham, Malaysia Campus</strong><em>Semenyih, Malaysia</em>BSc (Hons) Economics</div></div>
+        </div>
+        <div class="cv-section">
+          <p class="cv-label">Conference Presentations</p>
+                    <div class="cv-entry"><span class="cv-year">2026</span><div class="cv-detail">European Population Conference (Bologna)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2025</span><div class="cv-detail">23rd Conference of the European Divorce Network (Barcelona)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2024</span><div class="cv-detail">51st Seminar of the European Group of Risk and Insurance Economists (Hamburg)<br>Annual Meeting of the American Risk and Insurance Association (Denver)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2023</span><div class="cv-detail">Annual Meeting of the American Risk and Insurance Association (Washington DC)<br>Finance Workshop (Passau)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2022</span><div class="cv-detail">Annual Meeting of the American Risk and Insurance Association (Long Beach)<br>UHH Finance, Insurance &amp; Accounting Seminar (Hamburg)<br>Deutscher Verein für Versicherungswissenschaft Jahrestagung (virtual)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2021</span><div class="cv-detail">Grüneburgseminar (Frankfurt)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2019</span><div class="cv-detail">World Bank Half-Baked Seminar Series (Kuala Lumpur)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2018</span><div class="cv-detail">11th International Malaysian Studies Conference (Langkawi)</div></div>
+        </div>
+        <div class="cv-section">
+          <p class="cv-label">Scholarships &amp; Grants</p>
+                    <div class="cv-entry"><span class="cv-year">2022</span><div class="cv-detail">Leibniz Institute SAFE Experiment Center (€6,000) — with Volker Benndorf</div></div>
+                    <div class="cv-entry"><span class="cv-year">2018 — 2020</span><div class="cv-detail">GGG Scholarship, Johanna-Quandt-Stiftung (€24,000)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2015 — 2016</span><div class="cv-detail">Master's Scholarship, Hong Leong Foundation (approx. €10,000)</div></div>
+                    <div class="cv-entry"><span class="cv-year">2013 — 2014</span><div class="cv-detail">Dean's List, Faculty of Arts and Social Sciences, University of Nottingham</div></div>
+                    <div class="cv-entry"><span class="cv-year">2012 — 2013</span><div class="cv-detail">Dean's List, Faculty of Arts and Social Sciences, University of Nottingham</div></div>
+                    <div class="cv-entry"><span class="cv-year">2012</span><div class="cv-detail">High Achievers' Scholarship, University of Nottingham</div></div>
+        </div>
+        <div class="cv-section">
+          <p class="cv-label">Skills</p>
+          <div class="skills-grid">
+            <div class="skill-group"><p class="skill-label">Computing</p><p>Python, R, MATLAB, LaTeX, STATA<br>HTML, CSS, JavaScript, SQL</p></div>
+            <div class="skill-group"><p class="skill-label">Languages</p><p>English, Malay — native<br>German — intermediate<br>Cantonese — conversational<br>Mandarin, Japanese — basic</p></div>
+          </div>
+        </div>
+        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
       </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2024 — 2025</span>
-      <div class="cv-detail">
-        <strong>Goethe Universität Frankfurt</strong>
-        <em>Frankfurt, Germany</em>
-        Postdoctoral Researcher
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2020 — 2024</span>
-      <div class="cv-detail">
-        <strong>Goethe Universität Frankfurt</strong>
-        <em>Frankfurt, Germany</em>
-        Research and Teaching Assistant
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2024</span>
-      <div class="cv-detail">
-        <strong>The World Bank</strong>
-        <em>Remote</em>
-        Short-term Consultant, EAP Chief Economist Unit
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2017 — 2018</span>
-      <div class="cv-detail">
-        <strong>Khazanah Research Institute</strong>
-        <em>Kuala Lumpur, Malaysia</em>
-        Research Assistant
-      </div>
-    </div>
+    </main>
   </div>
-
-  <!-- EDUCATION -->
-  <div class="cv-section">
-    <h2>Education</h2>
-
-    <div class="cv-entry">
-      <span class="cv-year">2024</span>
-      <div class="cv-detail">
-        <strong>Goethe Universität Frankfurt</strong>
-        PhD in Economics
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2016</span>
-      <div class="cv-detail">
-        <strong>University College London</strong>
-        MSc Economics
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2015</span>
-      <div class="cv-detail">
-        <strong>University of Nottingham, Malaysia Campus</strong>
-        BSc (Hons) Economics
-      </div>
-    </div>
-  </div>
-
-  <!-- CONFERENCES -->
-  <div class="cv-section">
-    <h2>Conference Presentations</h2>
-
-    <div class="cv-entry">
-      <span class="cv-year">2026</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>European Population Conference (Bologna)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2025</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>23rd European Network for the Sociological and Demographic Study of Divorce — poster session (Bellaterra)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2024</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>51st Seminar of the European Group of Risk and Insurance Economists (Hamburg)</li>
-          <li>Annual Meeting of the American Risk and Insurance Association (Denver)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2023</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>Annual Meeting of the American Risk and Insurance Association (Washington DC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2022</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>Annual Meeting of the American Risk and Insurance Association (Long Beach)</li>
-          <li>Deutscher Verein für Versicherungswissenschaft Jahrestagung (virtual)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2021</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>Grüneburgseminar (Frankfurt)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2019</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>World Bank Half-Baked Seminar Series (Kuala Lumpur)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2018</span>
-      <div class="cv-detail">
-        <ul class="conf-list">
-          <li>11th International Malaysian Studies Conference (Langkawi)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- SCHOLARSHIPS -->
-  <div class="cv-section">
-    <h2>Scholarships &amp; Grants</h2>
-
-    <div class="cv-entry">
-      <span class="cv-year">2022</span>
-      <div class="cv-detail">Leibniz Institute SAFE Experiment Center (€6,000) — with Volker Benndorf</div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2018 — 2020</span>
-      <div class="cv-detail">Goethe Goes Global Scholarship, Johanna-Quandt-Stiftung (€24,000)</div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2015 — 2016</span>
-      <div class="cv-detail">Master's Scholarship, Hong Leong Foundation (approx. €10,000)</div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2013 — 2014</span>
-      <div class="cv-detail">Dean's List, Faculty of Arts and Social Sciences, University of Nottingham</div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2012 — 2013</span>
-      <div class="cv-detail">Dean's List, Faculty of Arts and Social Sciences, University of Nottingham</div>
-    </div>
-
-    <div class="cv-entry">
-      <span class="cv-year">2012</span>
-      <div class="cv-detail">High Achievers' Scholarship, University of Nottingham</div>
-    </div>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="cv-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Computing</h3>
-        <p>Python, R, MATLAB, LaTeX, STATA<br>
-        HTML, CSS, JavaScript, SQL</p>
-      </div>
-      <div class="skill-group">
-        <h3>Languages</h3>
-        <p>English, Malay — native<br>
-        German — intermediate<br>
-        Cantonese — conversational<br>
-        Mandarin, Japanese — basic</p>
-      </div>
-    </div>
-  </div>
-
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
 </body>
 </html>
