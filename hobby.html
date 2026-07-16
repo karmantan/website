@@ -81,59 +81,16 @@
       <p class="disclaimer" style="margin-top:0">DISCLAIMER: All thoughts are my own.</p>
     </div>
 
-    <!-- Lesson view -->
-    <div class="page-content lesson-view" id="lessonView">
-      <button class="back-btn" id="backBtn">← ALL LESSONS</button>
-      <div class="lesson-num-label" id="lessonLabel"></div>
-      <blockquote class="lesson-quote" id="lessonQuote"></blockquote>
-      <div class="lesson-date-disp" id="lessonDateDisp"></div>
-      <div class="lesson-body" id="lessonBody"></div>
-    </div>
+
 
   </main>
 </div>
 <script src="site.js"></script>
 <script>
 (function () {
-  var hobbyList = document.getElementById('hobbyList');
-  var lessonView = document.getElementById('lessonView');
-  var main = document.querySelector('.site-main');
-
-  function loadLesson(num) {
-    hobbyList.style.display = 'none';
-    lessonView.style.display = 'block';
-    if (main) main.scrollTop = 0;
-    fetch('images/lessons/lesson-' + num + '.html')
-      .then(function (r) { return r.text(); })
-      .then(function (html) {
-        var doc = new DOMParser().parseFromString(html, 'text/html');
-        doc.querySelectorAll('img').forEach(function (img) {
-          var src = img.getAttribute('src') || '';
-          if (src.startsWith('../images/')) img.setAttribute('src', src.replace('../images/', 'images/'));
-        });
-        var label = doc.querySelector('.lesson-num-label');
-        var quote = doc.querySelector('blockquote');
-        var date = doc.querySelector('.lesson-date-full');
-        var artSlot = doc.querySelector('.art-slot');
-        var body = doc.querySelector('.lesson-body');
-        document.getElementById('lessonLabel').textContent = label ? label.textContent.trim() : ('Lesson #' + num);
-        document.getElementById('lessonQuote').textContent = quote ? quote.textContent.trim() : '';
-        document.getElementById('lessonDateDisp').textContent = date ? date.textContent.trim() : '';
-        document.getElementById('lessonBody').innerHTML = (artSlot ? artSlot.outerHTML : '') + (body ? body.innerHTML : '');
-      });
-  }
-
   document.querySelectorAll('.lesson-link').forEach(function (link) {
-    link.addEventListener('click', function () {
-      var num = this.dataset.lesson;
-      if (num !== undefined) loadLesson(parseInt(num));
-    });
-  });
-
-  document.getElementById('backBtn').addEventListener('click', function () {
-    lessonView.style.display = 'none';
-    hobbyList.style.display = 'block';
-    if (main) main.scrollTop = 0;
+    var num = link.dataset.lesson;
+    if (num !== undefined) link.href = 'lessons/lesson-' + num + '.html';
   });
 })();
 </script>
