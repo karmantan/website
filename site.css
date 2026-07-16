@@ -121,7 +121,7 @@ details.yr-acc[open] > summary::after { content: ' ▾'; color: #f5722a; font-si
 .cooking-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
 
 /* ── Hamburger ── */
-.hamburger { display: none; align-items: center; justify-content: center; position: fixed; top: 14px; left: 14px; z-index: 200; width: 38px; height: 38px; background: #0c0c0c; border: 1px solid #2a2a2a; cursor: pointer; flex-direction: column; gap: 5px; padding: 8px; }
+.hamburger { display: none; align-items: center; justify-content: center; position: fixed; top: 14px; right: 14px; z-index: 200; width: 38px; height: 38px; background: #0c0c0c; border: 1px solid #2a2a2a; cursor: pointer; flex-direction: column; gap: 5px; padding: 8px; }
 .hamburger span { display: block; width: 18px; height: 1.5px; background: #f5722a; }
 .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 150; }
 
