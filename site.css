@@ -34,7 +34,7 @@ p { margin: 0; }
 
 /* ── Main ── */
 .site-main { flex: 1; min-width: 0; height: 100vh; overflow-y: auto; padding: 52px 60px 80px; }
-.page-content { max-width: 680px; }
+.page-content { max-width: 860px; }
 .page-content--wide { max-width: 800px; }
 .page-title { font-family: 'Courier Prime', monospace; font-size: 1.6rem; font-weight: 700; color: #e8e8e8; margin: 0 0 28px; letter-spacing: 0.01em; }
 .disclaimer { font-size: 0.6rem; color: #282828; border-top: 1px solid #1c1c1c; padding-top: 20px; letter-spacing: 0.12em; margin: 0; }
