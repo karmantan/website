@@ -103,13 +103,13 @@
     hobbyList.style.display = 'none';
     lessonView.style.display = 'block';
     if (main) main.scrollTop = 0;
-    fetch('../uploads/lessons/lesson-' + num + '.html')
+    fetch('images/lessons/lesson-' + num + '.html')
       .then(function (r) { return r.text(); })
       .then(function (html) {
         var doc = new DOMParser().parseFromString(html, 'text/html');
         doc.querySelectorAll('img').forEach(function (img) {
           var src = img.getAttribute('src') || '';
-          if (src.startsWith('../images/')) img.setAttribute('src', src.replace('../images/', '../uploads/images/'));
+          if (src.startsWith('../images/')) img.setAttribute('src', src.replace('../images/', 'images/'));
         });
         var label = doc.querySelector('.lesson-num-label');
         var quote = doc.querySelector('blockquote');
