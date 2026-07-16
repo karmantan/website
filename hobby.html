@@ -1,79 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hobby</title>
-  <link rel="icon" type="image/png" href="images/logo-20th-color.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hobby — Kar Man Tan</title>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <div class="site-layout">
-  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </div>
-  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
-    <aside>
-      <a class="nav-name" href="index.html">Kar Man<br>Tan</a>
-      <nav><ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="research.html">RESEARCH</a></li>
-        <li><a href="cooking.html">COOKING</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="hobby.html" class="active">HOBBY</a></li>
-      </ul></nav>
-    </aside>
-    <main>
-      <div class="hobby-wrap">
-        <h1 class="page-h1">Hobby</h1>
-        <p class="hobby-intro">Since the release of <a href="https://www.anime-gintama.com/ginpachi/" target="_blank">3年Z組銀八先生</a> anime, I started sharing random &ldquo;lessons&rdquo; on my Instagram stories based on weekly reflections and observations. A conversation with a friend inspired me to expand on these lessons as a writing exercise. The idea is to eventually create a webcomic. I am not good at drawing or storytelling so I want to start by writing a paragraph on what led to the lesson of the week.</p>
-        <details class="yr-acc" open>
-          <summary><span class="yr-label">2026</span><span class="yr-count">16 LESSONS</span></summary>
-          <ul class="lesson-list">
-            <li class="lesson-item"><span class="lesson-number">29</span><p class="lesson-tagline"><a href="lessons/lesson-29.html">How to be a leader</a></p><span class="lesson-date">2026.07.14</span></li>
-            <li class="lesson-item"><span class="lesson-number">28</span><p class="lesson-tagline"><a href="lessons/lesson-28.html">You will get stopped by a cop at least once in your life</a></p><span class="lesson-date">2026.07.11</span></li>
-            <li class="lesson-item"><span class="lesson-number">27</span><p class="lesson-tagline"><a href="lessons/lesson-27.html">If you can't afford to maximize comfort, be like the One Punch Man</a></p><span class="lesson-date">2026.06.28</span></li>
-            <li class="lesson-item"><span class="lesson-number">26</span><p class="lesson-tagline"><a href="lessons/lesson-26.html">You don't need to pay for comedy shows, just get on public transit</a></p><span class="lesson-date">2026.06.22</span></li>
-            <li class="lesson-item"><span class="lesson-number">25</span><p class="lesson-tagline"><a href="lessons/lesson-25.html">Everyone has probably mistaken a customer for staff once</a></p><span class="lesson-date">2026.06.20</span></li>
-            <li class="lesson-item"><span class="lesson-number">24</span><p class="lesson-tagline"><a href="lessons/lesson-24.html">It's probably a bit weird to observe creatures of habit</a></p><span class="lesson-date">2026.05.15</span></li>
-            <li class="lesson-item"><span class="lesson-number">23</span><p class="lesson-tagline"><a href="lessons/lesson-23.html">You shouldn't assume that people will be happy about your happiness</a></p><span class="lesson-date">2026.06.01</span></li>
-            <li class="lesson-item"><span class="lesson-number">22</span><p class="lesson-tagline"><a href="lessons/lesson-22.html">You doomscroll so far that you suddenly find yourself in May</a></p><span class="lesson-date">2026.05.03</span></li>
-            <li class="lesson-item"><span class="lesson-number">21</span><p class="lesson-tagline"><a href="lessons/lesson-21.html">If you rush, things get confusing, but if you take your time, many people are inconvenienced</a></p><span class="lesson-date">2026.04.03</span></li>
-            <li class="lesson-item"><span class="lesson-number">20</span><p class="lesson-tagline"><a href="lessons/lesson-20.html">It's cruel to make people talk</a></p><span class="lesson-date">2026.03.21</span></li>
-            <li class="lesson-item"><span class="lesson-number">19</span><p class="lesson-tagline"><a href="lessons/lesson-19.html">When deciding to have kids, people rarely have kids for the good of the kid</a></p><span class="lesson-date">2026.03.21</span></li>
-            <li class="lesson-item"><span class="lesson-number">18</span><p class="lesson-tagline"><a href="lessons/lesson-18.html">People parrot whatever others say</a></p><span class="lesson-date">2026.03.01</span></li>
-            <li class="lesson-item"><span class="lesson-number">17</span><p class="lesson-tagline"><a href="lessons/lesson-17.html">It's inconsiderate to take a bike onto a train</a></p><span class="lesson-date">2026.01.29</span></li>
-            <li class="lesson-item"><span class="lesson-number">16</span><p class="lesson-tagline"><a href="lessons/lesson-16.html">Do NOT leave a thermos containing a mixture of concentrated vinegar and baking soda closed</a></p><span class="lesson-date">2026.01.21</span></li>
-            <li class="lesson-item"><span class="lesson-number">15</span><p class="lesson-tagline"><a href="lessons/lesson-15.html">Everything is chaotic</a></p><span class="lesson-date">2026.01.18</span></li>
-            <li class="lesson-item"><span class="lesson-number">14</span><p class="lesson-tagline"><a href="lessons/lesson-14.html">Listen to the emo edgelord</a></p><span class="lesson-date">2026.01.01</span></li>
-          </ul>
-        </details>
-        <details class="yr-acc">
-          <summary><span class="yr-label">2025</span><span class="yr-count">14 LESSONS</span></summary>
-          <ul class="lesson-list">
-            <li class="lesson-item"><span class="lesson-number">13</span><p class="lesson-tagline"><a href="lessons/lesson-13.html">Some rules are put in place to make people seem more civilized than they really are</a></p><span class="lesson-date">2025.12.22</span></li>
-            <li class="lesson-item"><span class="lesson-number">12</span><p class="lesson-tagline"><a href="lessons/lesson-12.html">Don't trust self-proclaimed perfectionists</a></p><span class="lesson-date">2025.12.22</span></li>
-            <li class="lesson-item"><span class="lesson-number">11</span><p class="lesson-tagline"><a href="lessons/lesson-11.html">Sometimes you just gotta duke it out, sometimes you gotta be angry at everything</a></p><span class="lesson-date">2025.12.16</span></li>
-            <li class="lesson-item"><span class="lesson-number">10</span><p class="lesson-tagline"><a href="lessons/lesson-10.html">Meetings are used to make you appear busy</a></p><span class="lesson-date">2025.12.08</span></li>
-            <li class="lesson-item"><span class="lesson-number">9</span><p class="lesson-tagline"><a href="lessons/lesson-9.html">After a huge achievement, life feels empty</a></p><span class="lesson-date">2025.12.03</span></li>
-            <li class="lesson-item"><span class="lesson-number">8</span><p class="lesson-tagline"><a href="lessons/lesson-8.html">Some jobs are meaningful but using the word &quot;job&quot; may be a stretch</a></p><span class="lesson-date">2025.11.29</span></li>
-            <li class="lesson-item"><span class="lesson-number">7</span><p class="lesson-tagline"><a href="lessons/lesson-7.html">Cleaning is overwhelming and the reward of cleanliness is not strong enough to start</a></p><span class="lesson-date">2025.11.20</span></li>
-            <li class="lesson-item"><span class="lesson-number">6</span><p class="lesson-tagline"><a href="lessons/lesson-6.html">Flashiness leads to immediate recognition, but silver and its faint glint glows over time</a></p><span class="lesson-date">2025.11.10</span></li>
-            <li class="lesson-item"><span class="lesson-number">5</span><p class="lesson-tagline"><a href="lessons/lesson-5.html">There's no point talking about new money and old money since we are all no money</a></p><span class="lesson-date">2025.11.08</span></li>
-            <li class="lesson-item"><span class="lesson-number">4</span><p class="lesson-tagline"><a href="lessons/lesson-4.html">People may seem more considerate when you change your surroundings, but eventually people turn out to be the same everywhere</a></p><span class="lesson-date">2025.11.03</span></li>
-            <li class="lesson-item"><span class="lesson-number">3</span><p class="lesson-tagline"><a href="lessons/lesson-3.html">Standing normally in a concert feels awkward</a></p><span class="lesson-date">2025.10.27</span></li>
-            <li class="lesson-item"><span class="lesson-number">2</span><p class="lesson-tagline"><a href="lessons/lesson-2.html">If you allow people to worry less and relax more, they will become kind-hearted mentors</a></p><span class="lesson-date">2025.10.23</span></li>
-            <li class="lesson-item"><span class="lesson-number">1</span><p class="lesson-tagline"><a href="lessons/lesson-1.html">Don't shake hands with people to avoid tamakin</a></p><span class="lesson-date">2025.10.11</span></li>
-            <li class="lesson-item"><span class="lesson-number">0</span><p class="lesson-tagline"><a href="lessons/lesson-0.html">To be resistant to brainwashing, first be OK with being a constant weirdo</a></p><span class="lesson-date">2025.10.06</span></li>
-          </ul>
-        </details>
-        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-      </div>
-    </main>
-  </div>
+<div class="site-wrapper">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <aside class="site-aside" id="siteAside">
+    <a href="index.html" class="site-logo">Kar Man<br>Tan</a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-item">HOME</a>
+      <a href="cv.html" class="nav-item">CV</a>
+      <a href="research.html" class="nav-item">RESEARCH</a>
+      <a href="cooking.html" class="nav-item">COOKING</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+      <a href="hobby.html" class="nav-item active">HOBBY</a>
+    </nav>
+  </aside>
+  <main class="site-main">
+
+    <!-- Hobby list -->
+    <div class="page-content" id="hobbyList">
+      <h1 class="page-title">Hobby</h1>
+      <p style="font-size:0.74rem;line-height:2.1;color:#888;margin:0 0 36px">
+        Since the release of <a href="https://www.anime-gintama.com/ginpachi/" target="_blank">3年Z組銀八先生</a> anime, I started sharing random "lessons" on my Instagram stories based on weekly reflections and observations. A conversation with a friend inspired me to expand on these lessons as a writing exercise. The idea is to eventually create a webcomic. I am not good at drawing or storytelling so I want to start by writing a paragraph on what led to the lesson of the week.
+      </p>
+
+      <details class="yr-acc" open>
+        <summary>
+          <span class="yr-label" style="color:#f5722a">2026</span>
+          <span class="yr-count" style="color:#444">16 LESSONS</span>
+        </summary>
+        <ul class="lesson-list">
+          <li class="lesson-item"><span class="lesson-num">29</span><a class="lesson-link" data-lesson="29">How to be a leader</a><span class="lesson-date-col">2026.07.14</span></li>
+          <li class="lesson-item"><span class="lesson-num">28</span><a class="lesson-link" data-lesson="28">You will get stopped by a cop at least once in your life</a><span class="lesson-date-col">2026.07.11</span></li>
+          <li class="lesson-item"><span class="lesson-num">27</span><a class="lesson-link" data-lesson="27">If you can't afford to maximize comfort, be like the One Punch Man</a><span class="lesson-date-col">2026.06.28</span></li>
+          <li class="lesson-item"><span class="lesson-num">26</span><a class="lesson-link" data-lesson="26">You don't need to pay for comedy shows, just get on public transit</a><span class="lesson-date-col">2026.06.22</span></li>
+          <li class="lesson-item"><span class="lesson-num">25</span><a class="lesson-link" data-lesson="25">Everyone has probably mistaken a customer for staff once</a><span class="lesson-date-col">2026.06.20</span></li>
+          <li class="lesson-item"><span class="lesson-num">24</span><a class="lesson-link" data-lesson="24">It's probably a bit weird to observe creatures of habit</a><span class="lesson-date-col">2026.05.15</span></li>
+          <li class="lesson-item"><span class="lesson-num">23</span><a class="lesson-link" data-lesson="23">You shouldn't assume that people will be happy about your happiness</a><span class="lesson-date-col">2026.06.01</span></li>
+          <li class="lesson-item"><span class="lesson-num">22</span><a class="lesson-link" data-lesson="22">You doomscroll so far that you suddenly find yourself in May</a><span class="lesson-date-col">2026.05.03</span></li>
+          <li class="lesson-item"><span class="lesson-num">21</span><a class="lesson-link" data-lesson="21">If you rush, things get confusing, but if you take your time, many people are inconvenienced</a><span class="lesson-date-col">2026.04.03</span></li>
+          <li class="lesson-item"><span class="lesson-num">20</span><a class="lesson-link" data-lesson="20">It's cruel to make people talk</a><span class="lesson-date-col">2026.03.21</span></li>
+          <li class="lesson-item"><span class="lesson-num">19</span><a class="lesson-link" data-lesson="19">When deciding to have kids, people rarely have kids for the good of the kid</a><span class="lesson-date-col">2026.03.21</span></li>
+          <li class="lesson-item"><span class="lesson-num">18</span><a class="lesson-link" data-lesson="18">People parrot whatever others say</a><span class="lesson-date-col">2026.03.01</span></li>
+          <li class="lesson-item"><span class="lesson-num">17</span><a class="lesson-link" data-lesson="17">It's inconsiderate to take a bike onto a train</a><span class="lesson-date-col">2026.01.29</span></li>
+          <li class="lesson-item"><span class="lesson-num">16</span><a class="lesson-link" data-lesson="16">Do NOT leave a thermos containing a mixture of concentrated vinegar and baking soda closed</a><span class="lesson-date-col">2026.01.21</span></li>
+          <li class="lesson-item"><span class="lesson-num">15</span><a class="lesson-link" data-lesson="15">Everything is chaotic</a><span class="lesson-date-col">2026.01.18</span></li>
+          <li class="lesson-item" style="border-bottom:none"><span class="lesson-num">14</span><a class="lesson-link" data-lesson="14">Listen to the emo edgelord</a><span class="lesson-date-col">2026.01.01</span></li>
+        </ul>
+      </details>
+
+      <details class="yr-acc">
+        <summary>
+          <span class="yr-label" style="color:#666">2025</span>
+          <span class="yr-count" style="color:#3a3a3a">14 LESSONS</span>
+        </summary>
+        <ul class="lesson-list">
+          <li class="lesson-item"><span class="lesson-num">13</span><a class="lesson-link" data-lesson="13">Some rules are put in place to make people seem more civilized than they really are</a><span class="lesson-date-col">2025.12.22</span></li>
+          <li class="lesson-item"><span class="lesson-num">12</span><a class="lesson-link" data-lesson="12">Don't trust self-proclaimed perfectionists</a><span class="lesson-date-col">2025.12.22</span></li>
+          <li class="lesson-item"><span class="lesson-num">11</span><a class="lesson-link" data-lesson="11">Sometimes you just gotta duke it out, sometimes you gotta be angry at everything</a><span class="lesson-date-col">2025.12.16</span></li>
+          <li class="lesson-item"><span class="lesson-num">10</span><a class="lesson-link" data-lesson="10">Meetings are used to make you appear busy</a><span class="lesson-date-col">2025.12.08</span></li>
+          <li class="lesson-item"><span class="lesson-num">9</span><a class="lesson-link" data-lesson="9">After a huge achievement, life feels empty</a><span class="lesson-date-col">2025.12.03</span></li>
+          <li class="lesson-item"><span class="lesson-num">8</span><a class="lesson-link" data-lesson="8">Some jobs are meaningful but using the word "job" may be a stretch</a><span class="lesson-date-col">2025.11.29</span></li>
+          <li class="lesson-item"><span class="lesson-num">7</span><a class="lesson-link" data-lesson="7">Cleaning is overwhelming and the reward of cleanliness is not strong enough to start</a><span class="lesson-date-col">2025.11.20</span></li>
+          <li class="lesson-item"><span class="lesson-num">6</span><a class="lesson-link" data-lesson="6">Flashiness leads to immediate recognition, but silver and its faint glint glows over time</a><span class="lesson-date-col">2025.11.10</span></li>
+          <li class="lesson-item"><span class="lesson-num">5</span><a class="lesson-link" data-lesson="5">There's no point talking about new money and old money since we are all no money</a><span class="lesson-date-col">2025.11.08</span></li>
+          <li class="lesson-item"><span class="lesson-num">4</span><a class="lesson-link" data-lesson="4">People may seem more considerate when you change your surroundings, but eventually people turn out to be the same everywhere</a><span class="lesson-date-col">2025.11.03</span></li>
+          <li class="lesson-item"><span class="lesson-num">3</span><a class="lesson-link" data-lesson="3">Standing normally in a concert feels awkward</a><span class="lesson-date-col">2025.10.27</span></li>
+          <li class="lesson-item"><span class="lesson-num">2</span><a class="lesson-link" data-lesson="2">If you allow people to worry less and relax more, they will become kind-hearted mentors</a><span class="lesson-date-col">2025.10.23</span></li>
+          <li class="lesson-item"><span class="lesson-num">1</span><a class="lesson-link" data-lesson="1">Don't shake hands with people to avoid tamakin</a><span class="lesson-date-col">2025.10.11</span></li>
+          <li class="lesson-item" style="border-bottom:none"><span class="lesson-num">0</span><a class="lesson-link" data-lesson="0">To be resistant to brainwashing, first be OK with being a constant weirdo</a><span class="lesson-date-col">2025.10.06</span></li>
+        </ul>
+      </details>
+
+      <p class="disclaimer" style="margin-top:0">DISCLAIMER: All thoughts are my own.</p>
+    </div>
+
+    <!-- Lesson view -->
+    <div class="page-content lesson-view" id="lessonView">
+      <button class="back-btn" id="backBtn">← ALL LESSONS</button>
+      <div class="lesson-num-label" id="lessonLabel"></div>
+      <blockquote class="lesson-quote" id="lessonQuote"></blockquote>
+      <div class="lesson-date-disp" id="lessonDateDisp"></div>
+      <div class="lesson-body" id="lessonBody"></div>
+    </div>
+
+  </main>
+</div>
+<script src="site.js"></script>
+<script>
+(function () {
+  var hobbyList = document.getElementById('hobbyList');
+  var lessonView = document.getElementById('lessonView');
+  var main = document.querySelector('.site-main');
+
+  function loadLesson(num) {
+    hobbyList.style.display = 'none';
+    lessonView.style.display = 'block';
+    if (main) main.scrollTop = 0;
+    fetch('../uploads/lessons/lesson-' + num + '.html')
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        doc.querySelectorAll('img').forEach(function (img) {
+          var src = img.getAttribute('src') || '';
+          if (src.startsWith('../images/')) img.setAttribute('src', src.replace('../images/', '../uploads/images/'));
+        });
+        var label = doc.querySelector('.lesson-num-label');
+        var quote = doc.querySelector('blockquote');
+        var date = doc.querySelector('.lesson-date-full');
+        var artSlot = doc.querySelector('.art-slot');
+        var body = doc.querySelector('.lesson-body');
+        document.getElementById('lessonLabel').textContent = label ? label.textContent.trim() : ('Lesson #' + num);
+        document.getElementById('lessonQuote').textContent = quote ? quote.textContent.trim() : '';
+        document.getElementById('lessonDateDisp').textContent = date ? date.textContent.trim() : '';
+        document.getElementById('lessonBody').innerHTML = (artSlot ? artSlot.outerHTML : '') + (body ? body.innerHTML : '');
+      });
+  }
+
+  document.querySelectorAll('.lesson-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var num = this.dataset.lesson;
+      if (num !== undefined) loadLesson(parseInt(num));
+    });
+  });
+
+  document.getElementById('backBtn').addEventListener('click', function () {
+    lessonView.style.display = 'none';
+    hobbyList.style.display = 'block';
+    if (main) main.scrollTop = 0;
+  });
+})();
+</script>
 </body>
 </html>

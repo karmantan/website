@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research</title>
-  <link rel="icon" type="image/png" href="images/logo-20th-color.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Kar Man Tan</title>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <div class="site-layout">
-  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </div>
-  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
-    <aside>
-      <a class="nav-name" href="index.html">Kar Man<br>Tan</a>
-      <nav><ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="research.html" class="active">RESEARCH</a></li>
-        <li><a href="cooking.html">COOKING</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="hobby.html">HOBBY</a></li>
-      </ul></nav>
-    </aside>
-    <main>
-      <div class="research-wrap">
-        <h1 class="page-h1">Research</h1>
-        <div class="research-section">
-          <p class="research-label">Publications</p>
-          <div class="paper">
-            <span class="paper-title"><a href="https://onlinelibrary.wiley.com/doi/10.1111/rmir.70000" target="_blank">Testing for loss severity: Impact on loss reduction</a></span>
-            <p class="paper-meta">Risk Management and Insurance Review, 28(1), 150–180. 2025.</p>
-          </div>
+<div class="site-wrapper">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <aside class="site-aside" id="siteAside">
+    <a href="index.html" class="site-logo">Kar Man<br>Tan</a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-item">HOME</a>
+      <a href="cv.html" class="nav-item">CV</a>
+      <a href="research.html" class="nav-item active">RESEARCH</a>
+      <a href="cooking.html" class="nav-item">COOKING</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+      <a href="hobby.html" class="nav-item">HOBBY</a>
+    </nav>
+  </aside>
+  <main class="site-main">
+    <div class="page-content">
+      <h1 class="page-title">Research</h1>
+
+      <details class="section-acc" open>
+        <summary><span class="section-label" style="margin:0">Publications</span></summary>
+        <div class="paper-entry paper-entry--last">
+          <a href="https://onlinelibrary.wiley.com/doi/10.1111/rmir.70000" target="_blank" class="paper-title">Testing for loss severity: Impact on loss reduction</a>
+          <p class="paper-meta paper-meta--last">Risk Management and Insurance Review, 28(1), 150–180. 2025.</p>
         </div>
-        <div class="research-section">
-          <p class="research-label">Working Papers</p>
-          <div class="paper">
-            <span class="paper-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5071005" target="_blank">Genetic testing: Assessing severity risk and implications for health insurance</a></span>
-            <p class="paper-meta">With Helmut Gründl</p>
-            <p class="paper-abstract">We theoretically analyze how genetic testing to determine risk severity impacts health insurance purchases under various information regimes. If claims payments can exceed actual loss, individuals get tested and choose appropriate contracts, resulting in efficient outcomes. If insurers only offer a contract covering average loss, testing is forgone, leading to inefficiencies: high-risk individuals are under-insured, and low-risk individuals are over-insured. When contracts limit payments to actual losses and insurers can observe test results, people avoid testing and purchase full coverage, causing high-risk individuals to underpay and low-risk individuals to overpay for insurance. If test results are unobservable, adverse selection requires contract designs to eliminate it, achieving efficiency. Our study suggests encouraging the sharing of genetic test results for contracts exceeding actual loss to ensure adequate coverage. For contracts limited to actual loss, privacy protections are essential to avoid discrimination and ensure fair pricing.</p>
-          </div>
-          <div class="paper">
-            <span class="paper-title"><a href="https://drive.google.com/file/d/1JxIk_M579lXx3aAUFmfj4rqgZ6ruyILs/view?usp=drive_link" target="_blank">How does information on individual risk affect the demand for insurance</a></span>
-            <p class="paper-meta">With Volker Benndorf</p>
-            <span class="paper-status">Major revision — Theory and Decision</span>
-            <p class="paper-abstract">In our <a href="https://github.com/karmantan/informationinsuranceexp" target="_blank">experiment</a>, we examine how ambiguity and the cognitive load required to process information affects the accuracy of risk perception and insurance decisions. With information on true loss probabilities, individuals are accurate but least willing to pay for insurance. To address the low willingness to pay, we introduced ambiguity by only sharing average loss probabilities and cognitive load, by requiring individuals to exert effort in assessing risk factors. Both measures lowered accuracy without affecting willingness to pay. We then restricted the amount of cognitive load by requiring individuals to only assess factors which increased risk. This improved the accuracy of guesses and significantly increased the willingness to pay. Providing information on true loss probabilities can help prevent over-insurance while requiring individuals to assess factors which increase risk can help prevent under-insurance.</p>
-          </div>
+      </details>
+
+      <details class="section-acc" open>
+        <summary><span class="section-label" style="margin:0">Working Papers</span></summary>
+        <div class="paper-entry">
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5071005" target="_blank" class="paper-title">Genetic testing: Assessing severity risk and implications for health insurance</a>
+          <p class="paper-meta">With Helmut Gründl</p>
+          <p class="paper-abstract">We theoretically analyze how genetic testing to determine risk severity impacts health insurance purchases under various information regimes. If claims payments can exceed actual loss, individuals get tested and choose appropriate contracts, resulting in efficient outcomes. If insurers only offer a contract covering average loss, testing is forgone, leading to inefficiencies: high-risk individuals are under-insured, and low-risk individuals are over-insured. When contracts limit payments to actual losses and insurers can observe test results, people avoid testing and purchase full coverage, causing high-risk individuals to underpay and low-risk individuals to overpay for insurance. If test results are unobservable, adverse selection requires contract designs to eliminate it, achieving efficiency. Our study suggests encouraging the sharing of genetic test results for contracts exceeding actual loss to ensure adequate coverage. For contracts limited to actual loss, privacy protections are essential to avoid discrimination and ensure fair pricing.</p>
         </div>
-        <div class="research-section">
-          <p class="research-label">Policy Papers</p>
-          <div class="paper">
-            <span class="paper-title"><a href="https://www.krinstitute.org/publications/behind-the-blackboard-how-basic-indicators-mask-gaps-in-quality-of-education" target="_blank">Behind the Blackboard: How basic indicators mask gaps in quality of education</a></span>
-            <p class="paper-meta">With Alyssa Chua Lee-Yen, Alia Muhammad Radzi and Rachel Gong. Khazanah Research Institute.</p>
-          </div>
-          <div class="paper">
-            <span class="paper-title"><a href="https://www.krinstitute.org/assets/contentMS/img/template/editor/Technical%20Note%201_20181018.pdf" target="_blank">More or less equal? Accounting for missing top and bottom incomes in measurement of income inequality in Malaysia</a></span>
-            <p class="paper-meta">With Allen Ng. Khazanah Research Institute.</p>
-          </div>
+        <div class="paper-entry paper-entry--last">
+          <a href="https://drive.google.com/file/d/1JxIk_M579lXx3aAUFmfj4rqgZ6ruyILs/view?usp=drive_link" target="_blank" class="paper-title">How does information on individual risk affect the demand for insurance</a>
+          <p class="paper-meta" style="margin-bottom:8px">With Volker Benndorf</p>
+          <span class="paper-badge">Major revision — Theory and Decision</span>
+          <p class="paper-abstract">In our <a href="https://github.com/karmantan/informationinsuranceexp" target="_blank">experiment</a>, we examine how ambiguity and the cognitive load required to process information affects the accuracy of risk perception and insurance decisions. With information on true loss probabilities, individuals are accurate but least willing to pay for insurance. To address the low willingness to pay, we introduced ambiguity by only sharing average loss probabilities and cognitive load, by requiring individuals to exert effort in assessing risk factors. Both measures lowered accuracy without affecting willingness to pay. We then restricted the amount of cognitive load by requiring individuals to only assess factors which increased risk. This improved the accuracy of guesses and significantly increased the willingness to pay. Providing information on true loss probabilities can help prevent over-insurance while requiring individuals to assess factors which increase risk can help prevent under-insurance.</p>
         </div>
-        <div class="research-section">
-          <p class="research-label">Books</p>
-          <div class="paper">
-            <span class="paper-title"><a href="https://www.krinstitute.org/publications/the-state-of-households-2018-different-realities" target="_blank">The State of Households 2018: Different Realities</a></span>
-            <p class="paper-meta">With Allen Ng, Adam Manaf Mohamed Firouz, Jarud Romadan Khalidi, Musaddiq Adam Muhtar, Siti Aiysyah Tumin, Tan Theng Theng and Tan Zhai Gen. Khazanah Research Institute.</p>
-          </div>
+      </details>
+
+      <details class="section-acc" open>
+        <summary><span class="section-label" style="margin:0">Policy Papers</span></summary>
+        <div class="paper-entry">
+          <a href="https://www.krinstitute.org/publications/behind-the-blackboard-how-basic-indicators-mask-gaps-in-quality-of-education" target="_blank" class="paper-title">Behind the Blackboard: How basic indicators mask gaps in quality of education</a>
+          <p class="paper-meta paper-meta--last">With Alyssa Chua Lee-Yen, Alia Muhammad Radzi and Rachel Gong. Khazanah Research Institute.</p>
         </div>
-        <a class="ssrn-link" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6117558" target="_blank">↗ SSRN AUTHOR PAGE</a>
-        <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-      </div>
-    </main>
-  </div>
+        <div class="paper-entry paper-entry--last">
+          <a href="https://www.krinstitute.org/assets/contentMS/img/template/editor/Technical%20Note%201_20181018.pdf" target="_blank" class="paper-title">More or less equal? Accounting for missing top and bottom incomes in measurement of income inequality in Malaysia</a>
+          <p class="paper-meta paper-meta--last">With Allen Ng. Khazanah Research Institute.</p>
+        </div>
+      </details>
+
+      <details class="section-acc" open>
+        <summary><span class="section-label" style="margin:0">Books</span></summary>
+        <div class="paper-entry paper-entry--last">
+          <a href="https://www.krinstitute.org/publications/the-state-of-households-2018-different-realities" target="_blank" class="paper-title">The State of Households 2018: Different Realities</a>
+          <p class="paper-meta paper-meta--last">With Allen Ng, Adam Manaf Mohamed Firouz, Jarud Romadan Khalidi, Musaddiq Adam Muhtar, Siti Aiysyah Tumin, Tan Theng Theng and Tan Zhai Gen. Khazanah Research Institute.</p>
+        </div>
+      </details>
+
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6117558" target="_blank" class="ssrn-link">↗ SSRN AUTHOR PAGE</a>
+      <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+    </div>
+  </main>
+</div>
+<script src="site.js"></script>
 </body>
 </html>

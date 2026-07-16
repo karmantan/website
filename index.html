@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kar Man Tan</title>
-  <meta property="og:title" content="Kar Man Tan">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo-20th-color.png">
-  <meta name="description" content="Personal website of Kar Man Tan">
-  <link rel="icon" type="image/png" href="images/logo-20th-color.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kar Man Tan","image":"images/logo-20th-color.png"}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kar Man Tan</title>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <div class="site-layout">
-  <div class="hamburger" id="hamburger" onclick="document.querySelector('aside').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </div>
-  <div id="nav-overlay" onclick="document.querySelector('aside').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')"></div>
-    <aside>
-      <a class="nav-name" href="index.html">Kar Man<br>Tan</a>
-      <nav><ul class="nav-links">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="research.html">RESEARCH</a></li>
-        <li><a href="cooking.html">COOKING</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="hobby.html">HOBBY</a></li>
-      </ul></nav>
-    </aside>
-    <main>
-      <div class="home-hero">
-        <img src="images/profile.png" alt="Kar Man Tan" class="home-hero-img">
-        <div>
-          <h1 class="home-h1">Kar Man Tan</h1>
-          <p class="home-bio">I am a postdoctoral researcher in the mortality research group at the Federal Institute for Population Research (<a href="https://www.bib.bund.de" target="_blank">BiB</a>). I completed my PhD in Economics in the Graduate School of Economics, Finance and Management (<a href="https://www.gsefm.eu" target="_blank">GSEFM</a>) at Goethe University Frankfurt in April 2024. I am currently affiliated with the Einstein Center Population Diversity (<a href="https://einstein-diversity.com/" target="_blank">ECPD</a>) at Charité, International Center for Insurance Regulation (<a href="https://www.icir.de/" target="_blank">ICIR</a>), and Frankfurt Laboratory for Experimental Economic Research (<a href="https://flex.uni-frankfurt.de/" target="_blank">FLEX</a>). My research interests include behavioral economics and applied microeconomics.</p>
-          <p class="home-bio">I enjoy watching anime in my free time. I am particularly fond of Gintama (<a href="https://www.anime-gintama.com/" target="_blank">銀魂</a>) for its unapologetic humor, disrespectful indifference and character building. I also like Golden Kamuy (<a href="https://kamuy-anime.com/" target="_blank">ゴールデンカムイ</a>), another anime with ridiculous humor but a lot of historical references and factions representing different flavors of (morally ambiguous) ambition.</p>
-        </div>
+<div class="site-wrapper">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <aside class="site-aside" id="siteAside">
+    <a href="index.html" class="site-logo">Kar Man<br>Tan</a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-item active">HOME</a>
+      <a href="cv.html" class="nav-item">CV</a>
+      <a href="research.html" class="nav-item">RESEARCH</a>
+      <a href="cooking.html" class="nav-item">COOKING</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+      <a href="hobby.html" class="nav-item">HOBBY</a>
+    </nav>
+  </aside>
+  <main class="site-main">
+    <div class="home-hero">
+      <img src="../uploads/images/profile.png" alt="Kar Man Tan" class="home-avatar">
+      <div class="home-bio">
+        <h1 class="page-title" style="font-size:2rem;margin-bottom:22px;">Kar Man Tan</h1>
+        <p>I am a postdoctoral researcher in the mortality research group at the Federal Institute for Population Research (<a href="https://www.bib.bund.de" target="_blank">BiB</a>). I completed my PhD in Economics in the Graduate School of Economics, Finance and Management (<a href="https://www.gsefm.eu" target="_blank">GSEFM</a>) at Goethe University Frankfurt in April 2024. I am currently affiliated with the Einstein Center Population Diversity (<a href="https://einstein-diversity.com/" target="_blank">ECPD</a>) at Charité, International Center for Insurance Regulation (<a href="https://www.icir.de/" target="_blank">ICIR</a>), and Frankfurt Laboratory for Experimental Economic Research (<a href="https://flex.uni-frankfurt.de/" target="_blank">FLEX</a>). My research interests include behavioral economics and applied microeconomics.</p>
+        <p>I enjoy watching anime in my free time. I am particularly fond of Gintama (<a href="https://www.anime-gintama.com/" target="_blank">銀魂</a>) for its unapologetic humor, disrespectful indifference and character building. I also like Golden Kamuy (<a href="https://kamuy-anime.com/" target="_blank">ゴールデンカムイ</a>), another anime with ridiculous humor but a lot of historical references and factions representing different flavors of (morally ambiguous) ambition.</p>
       </div>
-      <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-    </main>
-  </div>
+    </div>
+    <p class="home-disclaimer">DISCLAIMER: All thoughts are my own.</p>
+  </main>
+</div>
+<script src="site.js"></script>
 </body>
 </html>
