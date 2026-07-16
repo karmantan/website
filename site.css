@@ -53,7 +53,7 @@ p { margin: 0; }
 .cv-date--mini { font-size: 0.58rem; color: rgba(245,114,42,0.38); width: 130px; flex-shrink: 0; font-family: 'Space Mono', monospace; line-height: 1.8; }
 .cv-body { font-size: 0.74rem; color: #888; line-height: 1.8; }
 .cv-institution { display: block; color: #ccc; margin-bottom: 2px; }
-.cv-location { display: block; color: #555; font-size: 0.65rem; font-family: 'Space Mono', monospace; }
+.cv-location { display: block; color: #555; font-size: 0.65rem; font-family: 'Courier Prime', monospace; }
 .cv-location--spaced { margin-bottom: 4px; }
 
 /* Skills */
