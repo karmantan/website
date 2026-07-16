@@ -4,38 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson #9 — Kar Man Tan</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../site.css">
   <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
 </head>
 <body>
-<nav>
-  <a class="nav-name" href="../index.html">Kar Man Tan</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../cv.html">CV</a></li>
-    <li><a href="../research.html">Research</a></li>
-    <li><a href="../cooking.html">Cooking</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../hobby.html" class="active">Hobby</a></li>
-  </ul>
-</nav>
-<main>
-  <a class="back-link" href="../hobby.html">All lessons</a>
-  <header class="lesson-header">
-    <span class="lesson-num-label">Lesson #9</span>
-    <blockquote>After a huge achievement, life feels empty</blockquote>
-    <span class="lesson-date-full">2025.12.03</span>
-  </header>
-  <!-- art-slot: uncomment and add src to insert Gintama art
-  <div class="art-slot">
+<div class="site-wrapper">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <aside class="site-aside" id="siteAside">
+    <a href="../index.html" class="site-logo">Kar Man<br>Tan</a>
+    <nav class="site-nav">
+      <a href="../index.html" class="nav-item">HOME</a>
+      <a href="../cv.html" class="nav-item">CV</a>
+      <a href="../research.html" class="nav-item">RESEARCH</a>
+      <a href="../cooking.html" class="nav-item">COOKING</a>
+      <a href="../contact.html" class="nav-item">CONTACT</a>
+      <a href="../hobby.html" class="nav-item active">HOBBY</a>
+    </nav>
+  </aside>
+  <main class="site-main">
+    <div class="page-content">
+      <a class="back-link" href="../hobby.html">← All lessons</a>
+      <header class="lesson-header">
+        <span class="lesson-num-label">Lesson #9</span>
+        <div class="lesson-quote">After a huge achievement, life feels empty</div>
+        <span class="lesson-date-disp">2025.12.03</span>
+      </header>
+      <div class="art-slot">
     <img src="../images/art/your-image.jpg" alt="">
     <p class="art-caption">Caption</p>
   </div>
-  -->
-  <div class="lesson-body">
-      <p>A friend just defended her PhD and that is one of the most difficult things anyone can do, that you wonder how crazy one must be to embark on such a journey. It reminded me of my own journey. Getting a PhD should flood you with joy and the feeling of invincibility, but, in fact, it's a feeling of dread and somehow, anticlimax. You're happy for two seconds before being consumed by thoughts of what comes next. 2007 me made a blog post with a list of wants, and one of the wants was to get a PhD but then that's it. But it's not just PhDs. I remember getting a scholarship in 2015, and I was happy for the two seconds I read the email, then emptiness again. Similarly, being done with MSc exams and waking up in a panic that I haven't studied enough. </p>
-  </div>
-  <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
-</main>
+      <div class="lesson-body">
+<p>A friend just defended her PhD and that is one of the most difficult things anyone can do, that you wonder how crazy one must be to embark on such a journey. It reminded me of my own journey. Getting a PhD should flood you with joy and the feeling of invincibility, but, in fact, it's a feeling of dread and somehow, anticlimax. You're happy for two seconds before being consumed by thoughts of what comes next. 2007 me made a blog post with a list of wants, and one of the wants was to get a PhD but then that's it. But it's not just PhDs. I remember getting a scholarship in 2015, and I was happy for the two seconds I read the email, then emptiness again. Similarly, being done with MSc exams and waking up in a panic that I haven't studied enough. </p>
+      </div>
+      <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+    </div>
+  </main>
+</div>
+<script src="../site.js"></script>
 </body>
 </html>
