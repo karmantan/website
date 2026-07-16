@@ -101,9 +101,9 @@ details.yr-acc[open] > summary::after { content: ' ▾'; color: #f5722a; font-si
 .lesson-view { display: none; }
 .back-btn { background: none; border: none; cursor: pointer; font-size: 0.62rem; color: #555; letter-spacing: 0.1em; margin-bottom: 40px; display: inline-flex; align-items: center; gap: 8px; font-family: 'Courier Prime', monospace; padding: 0; }
 .back-btn:hover { color: #888; }
-.lesson-num-label { font-size: 0.62rem; color: #f5722a; letter-spacing: 0.12em; margin-bottom: 14px; font-family: 'Space Mono', monospace; }
+.lesson-num-label { font-size: 0.62rem; color: #f5722a; letter-spacing: 0.12em; margin-bottom: 14px; font-family: 'Courier Prime', monospace; }
 .lesson-quote { font-family: 'Courier Prime', monospace; font-size: 1.4rem; color: #e8e8e8; margin: 0 0 14px; line-height: 1.4; font-style: normal; font-weight: 700; padding: 0; }
-.lesson-date-disp { font-size: 0.6rem; color: #444; margin-bottom: 40px; letter-spacing: 0.08em; font-family: 'Space Mono', monospace; }
+.lesson-date-disp { font-size: 0.6rem; color: #444; margin-bottom: 40px; letter-spacing: 0.08em; font-family: 'Courier Prime', monospace; }
 .lesson-body p { margin: 0 0 1.6em; font-size: 0.78rem; line-height: 2.1; color: #888; }
 .lesson-body p:last-child { margin-bottom: 0; }
 .art-slot { margin-bottom: 28px; }
