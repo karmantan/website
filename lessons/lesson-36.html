@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson #36 — Kar Man Tan</title>
+  <link rel="stylesheet" href="../site.css">
+  <link rel="icon" type="image/png" href="../images/logo-20th-color.png">
+  <style>
+    /* ===== Messenger clock widgets: all styles scoped to .mc-widget ===== */
+    /* All widget text copies your paragraph text (font, size, colour, line spacing).
+       The script at the bottom reads it from the first .lesson-body p. */
+    .mc-widget { margin: 2rem 0; padding: 0; font: inherit; color: inherit; }
+    .mc-widget * { box-sizing: border-box; font-family: inherit; font-size: 1em; line-height: inherit; letter-spacing: inherit; color: inherit; }
+    .mc-controls { display: flex; align-items: center; gap: 12px; margin-bottom: 0.75rem; }
+    .mc-controls label { white-space: nowrap; }
+    .mc-controls input[type=range] { flex: 1; min-width: 0; accent-color: #1D9E75; }
+    .mc-speed-out { font-weight: 600; min-width: 7.5em; text-align: right; }
+    .mc-canvas { display: block; width: 100%; height: 290px; }
+    .mc-svg { display: block; width: 100%; height: auto; }
+    .mc-halves { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 0.25rem; }
+    .mc-half-title { display: block; font-weight: 600; }
+    .mc-half-sub { display: block; }
+    .mc-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 0.75rem; }
+    .mc-card { background: rgba(128,128,128,0.09); border-radius: 8px; padding: 0.7rem 0.9rem; }
+    .mc-card-label { display: block; }
+    .mc-card-value { display: block; font-weight: 600; margin-top: 2px; }
+    .mc-card-line { display: block; }
+    .mc-card-done { display: block; min-height: 1.5em; margin-top: 2px; }
+    .mc-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 0.75rem; }
+    .mc-btns { display: flex; gap: 8px; }
+    .mc-btn { padding: 6px 14px; border: 1px solid rgba(128,128,128,0.5); border-radius: 6px; background: transparent; cursor: pointer; }
+    .mc-btn:disabled { opacity: 0.4; cursor: default; }
+    .mc-caption { display: block; margin: 0.9rem 0 0.6rem; min-height: 3.6em; }
+    .mc-widget figcaption { margin-top: 0.6rem; }
+  </style>
+</head>
+<body>
+<div class="site-wrapper">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <aside class="site-aside" id="siteAside">
+    <a href="../index.html" class="site-logo">Kar Man<br>Tan</a>
+    <nav class="site-nav">
+      <a href="../index.html" class="nav-item">HOME</a>
+      <a href="../cv.html" class="nav-item">CV</a>
+      <a href="../research.html" class="nav-item">RESEARCH</a>
+      <a href="../cooking.html" class="nav-item">COOKING</a>
+      <a href="../contact.html" class="nav-item">CONTACT</a>
+      <a href="../hobby.html" class="nav-item active">HOBBY</a>
+    </nav>
+  </aside>
+  <main class="site-main">
+    <div class="page-content">
+      <a class="back-link" href="../hobby.html">← All lessons</a>
+      <header class="lesson-header">
+        <span class="lesson-num-label">Lesson #36</span>
+        <div class="lesson-quote">Time manipulation round 2</div>
+        <span class="lesson-date-disp">2026.09.30</span>
+      </header>
+      <!-- <div class="art-slot">
+        <img src="../images/lessons/ichigo_lesson_32.png" alt="">
+      </div> -->
+      <div class="lesson-body">
+    <p>I realized my article yesterday was really sloppy, especially the part about the baseball and the flashlight. This is what happens when I want to sound cool but have basically zero understanding of the theory of relativity. Let me try again today and then it's back to a brief but fun use case of time manipulation.</p>
+    <p>I'll still stick with trains to set the scene. Suppose we have station A and B and both are 1.8 million km apart. There is a clock in each station and the staff at the platform synced the clocks beforehand and the passengers in the train also synced their watches. Let's say it's 10:00:00 when the train passes station A. Let the train travel at 60% of the speed of light, so 180,000km/s. The train then passes station B. The clock at station B reads 10:00:10 as the train passes, but the passenger's watch reads 10:00:08. What?</p>
+    <p>To understand this, we need to imagine a sprite (like the fairy) oscillating. Let's say there are two sprites. There's one sprite on the platform and one on the train. Imagine the sprite is a messenger and has to constantly bring messages from a point on the floor to a point directly above in the ceiling. Assume the floor to ceiling distance is 4 steps and identical on the platform and on the train. The sprite isn't allowed to stop and has to travel at the speed of light. The platform sprite just oscillates. The train sprite is also oscillating but also moves forward due to the train. From the perspective of a platform observer, the sprite is no longer ONLY taking 4 steps upwards but is also traveling diagonally due to the forward movement of the train. (Of course for a passenger on the train, the sprite is still taking 4 steps upwards.) For simplicity, say the train moves the sprite 3 steps forward, so using Pythagoras theorem, the train sprite takes 5 steps diagonally to reach the ceiling. To the platform observer, the 5 steps needed by the train sprite take longer than the 4 steps needed by the platform sprite since the speed is constant. In other words, the platform observer perceives the train sprite as slower than the platform sprite. The faster the train the longer the diagonal. We can interpret the sprite as a really simple timekeeper. Each oscillation (floor to ceiling OR ceiling to floor) is a tick. So when the train reached point B, the platform clock would have ticked 10 times, but the train clock only 8. The faster the train, the more steps it takes to complete one tick.</p>
+
+    <!-- ========== ANIMATION 1: seen from the platform ========== -->
+    <figure class="mc-widget" data-mc="platform">
+      <div class="mc-controls">
+        <label>Train speed</label>
+        <input type="range" class="mc-speed" min="0" max="95" step="5" value="60" aria-label="Train speed as a percentage of light speed">
+        <span class="mc-speed-out">60% of light</span>
+      </div>
+      <canvas class="mc-canvas" role="img" aria-label="A clock standing still on the platform above, and the same clock riding a train below. The train clock slides right and its messenger leaves a zigzag trail."></canvas>
+      <div class="mc-cards">
+        <div class="mc-card"><span class="mc-card-label">Platform clock ticks</span><span class="mc-card-value mc-n1">0</span></div>
+        <div class="mc-card"><span class="mc-card-label">Train clock ticks</span><span class="mc-card-value mc-n2">0</span></div>
+        <div class="mc-card"><span class="mc-card-label">Steps per tick</span><span class="mc-card-value mc-steps">4 vs 5</span></div>
+      </div>
+      <div class="mc-footer">
+        <span class="mc-rate"></span>
+        <span class="mc-btns"><button type="button" class="mc-btn mc-play">Pause</button><button type="button" class="mc-btn mc-reset">Reset counts</button></span>
+      </div>
+      <figcaption>Seen from the platform. Drag the slider to change the train's speed.</figcaption>
+    </figure>
+
+    <!-- ========== YOUR TEXT: why the moving clock ticks slower ========== -->
+
+  <p>I kept emphasizing "from the perspective of the platform observer". We can also look at the perspective of a passenger on the train. The sprite is oscillating but not moving forward since both are in the train. In fact, the platform seems to be zipping past backwards at 60% of light speed. So, just reverse the situation above. To a passenger on a train, the platform sprite is actually moving backwards diagonally, as a result is perceived to tick slower than the train sprite. While the train keeps moving at a steady speed, neither view is more correct than the other. It's all relative. THAT'S why it's called the theory of relativity! The only way to settle whether the platform observer or passenger actually aged less is to stop the train and all the clocks and then compare them!</p>
+  
+
+    <!-- ========== YOUR TEXT: switching to the passenger's seat ========== -->
+
+
+    <!-- ========== ANIMATION 3: seen from the passenger ========== -->
+    <figure class="mc-widget" data-mc="passenger">
+      <div class="mc-controls">
+        <label>Train speed</label>
+        <input type="range" class="mc-speed" min="0" max="95" step="5" value="60" aria-label="Train speed as a percentage of light speed">
+        <span class="mc-speed-out">60% of light</span>
+      </div>
+      <canvas class="mc-canvas" role="img" aria-label="The passenger's own clock standing still above, and a platform clock sliding backward below, its messenger leaving a zigzag trail."></canvas>
+      <div class="mc-cards">
+        <div class="mc-card"><span class="mc-card-label">Passenger clock ticks</span><span class="mc-card-value mc-n1">0</span></div>
+        <div class="mc-card"><span class="mc-card-label">Platform clock ticks</span><span class="mc-card-value mc-n2">0</span></div>
+        <div class="mc-card"><span class="mc-card-label">Steps per tick</span><span class="mc-card-value mc-steps">4 vs 5</span></div>
+      </div>
+      <div class="mc-footer">
+        <span class="mc-rate"></span>
+        <span class="mc-btns"><button type="button" class="mc-btn mc-play">Pause</button><button type="button" class="mc-btn mc-reset">Reset counts</button></span>
+      </div>
+      <figcaption>Seen from the passenger's seat.</figcaption>
+    </figure>
+
+    <!-- ========== YOUR TEXT: back to the fun use case ========== -->
+    <p>If you are starting to experience baldness, time manipulation can really help. You can carefully smash raw time together so that there is one universe where you have hair, isolate only that event and you in the point of time where you have hair so as to not engage in mass genocide just for hair. Then freeze that point and fold it into your current timeline and knit that point together with all past and future points so that you never lose hair. Maybe, you don't even need to mess with raw time. If there is an existing universe where you don't lose your hair, you might be able to duplicate, freeze and then knit that point so that you have hair in the current universe. I think it might be a bit like Orihime's Souten Kisshun ability.</p>
+      </div>
+      <p class="disclaimer">DISCLAIMER: All thoughts are my own.</p>
+    </div>
+  </main>
+</div>
+<script src="../site.js"></script>
+<script>
+/* ===== Messenger clock widgets ===== */
+(function () {
+  var TEAL = '#1D9E75', PURPLE = '#7F77DD', AMBER = '#EF9F27';
+
+  function rgba(col, a) {
+    var m = (col || '').match(/[\d.]+/g);
+    return m && m.length >= 3 ? 'rgba(' + m[0] + ',' + m[1] + ',' + m[2] + ',' + a + ')' : 'rgba(128,128,128,' + a + ')';
+  }
+
+  /* Copy the paragraph text style onto every widget, so figure text matches body text */
+  function matchBodyText() {
+    var p = document.querySelector('.lesson-body p');
+    if (!p) return;
+    var s = getComputedStyle(p);
+    var ws = document.querySelectorAll('.mc-widget');
+    for (var i = 0; i < ws.length; i++) {
+      var w = ws[i].style;
+      w.fontFamily = s.fontFamily; w.fontSize = s.fontSize; w.fontWeight = s.fontWeight;
+      w.lineHeight = s.lineHeight; w.letterSpacing = s.letterSpacing; w.color = s.color;
+    }
+  }
+  matchBodyText();
+
+  var CLOCK_VIEWS = {
+    platform: {
+      top: 'Clock standing on the platform', bottom: 'Same clock riding the train',
+      topColor: PURPLE, bottomColor: TEAL, dir: 1,
+      rate: function (r) { return 'Train clock runs at ' + r + '% of the platform clock'; }
+    },
+    passenger: {
+      top: 'Passenger clock', bottom: 'Platform clock, sliding backward past passenger',
+      topColor: TEAL, bottomColor: PURPLE, dir: -1,
+      rate: function (r) { return 'Platform clock runs at ' + r + '% of passenger clock'; }
+    }
+  };
+
+  function initClock(root) {
+    var cfg = CLOCK_VIEWS[root.getAttribute('data-mc')];
+    var cv = root.querySelector('.mc-canvas'), ctx = cv.getContext('2d');
+    var slider = root.querySelector('.mc-speed'), out = root.querySelector('.mc-speed-out');
+    var n1El = root.querySelector('.mc-n1'), n2El = root.querySelector('.mc-n2');
+    var stEl = root.querySelector('.mc-steps'), rateEl = root.querySelector('.mc-rate');
+    var playBtn = root.querySelector('.mc-play');
+    var H = 290, C = 150, BH = 80, BW = 40, L1 = 40, L2 = 180, X0 = 30;
+    var W = 600, v = slider.value / 100, s1, s2, bx, trail, running = true, visible = true, last = null;
+    var st = getComputedStyle(root);
+    var textCol = st.color, lineCol = rgba(st.color, 0.3);
+    var font = (st.fontSize || '16px') + ' ' + (st.fontFamily || 'serif');
+
+    function size() {
+      var dpr = window.devicePixelRatio || 1;
+      W = cv.clientWidth || 600;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function startX() { return cfg.dir > 0 ? X0 : W - BW - X0; }
+    function update() {
+      var r = Math.sqrt(1 - v * v), steps = 4 / r;
+      n1El.textContent = s1.n; n2El.textContent = s2.n;
+      stEl.textContent = '4 vs ' + (Math.abs(steps - Math.round(steps)) < 0.05 ? Math.round(steps) : steps.toFixed(1));
+      rateEl.textContent = cfg.rate(Math.round(r * 100));
+    }
+    function reset() {
+      s1 = { y: 0, d: 1, n: 0 }; s2 = { y: 0, d: 1, n: 0 };
+      bx = startX(); trail = []; last = null;
+      update(); draw();
+    }
+    function bounce(o, speed, dt) {
+      o.y += o.d * speed * dt;
+      if (o.y >= BH) { o.y = 2 * BH - o.y; o.d = -1; o.n++; }
+      else if (o.y <= 0) { o.y = -o.y; o.d = 1; o.n++; }
+    }
+    function line(a, b, c, d) { ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, d); ctx.stroke(); }
+    function dot(x, y) { ctx.fillStyle = AMBER; ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill(); }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      ctx.font = font; ctx.fillStyle = textCol;
+      ctx.fillText(cfg.top, X0, L1 - 14);
+      ctx.fillText(cfg.bottom, X0, L2 - 14);
+      ctx.strokeStyle = lineCol; ctx.lineWidth = 1;
+      line(0, L1 + BH + 8, W, L1 + BH + 8);
+      line(0, L2 + BH + 8, W, L2 + BH + 8);
+      ctx.strokeStyle = cfg.topColor; ctx.lineWidth = 2; ctx.strokeRect(X0, L1, BW, BH);
+      dot(X0 + BW / 2, L1 + s1.y);
+      if (trail.length > 1) {
+        ctx.strokeStyle = 'rgba(239,159,39,0.55)'; ctx.lineWidth = 1.5; ctx.beginPath();
+        ctx.moveTo(trail[0][0], trail[0][1]);
+        for (var i = 1; i < trail.length; i++) ctx.lineTo(trail[i][0], trail[i][1]);
+        ctx.stroke();
+      }
+      ctx.strokeStyle = cfg.bottomColor; ctx.lineWidth = 2; ctx.strokeRect(bx, L2, BW, BH);
+      dot(bx + BW / 2, L2 + s2.y);
+    }
+    function frame(ts) {
+      if (running && visible) {
+        if (last === null) last = ts;
+        var dt = Math.min((ts - last) / 1000, 0.05); last = ts;
+        bounce(s1, C, dt);
+        bounce(s2, C * Math.sqrt(1 - v * v), dt);
+        bx += cfg.dir * C * v * dt;
+        if (cfg.dir > 0 ? bx > W - BW - 6 : bx < 6) { bx = startX(); trail = []; }
+        trail.push([bx + BW / 2, L2 + s2.y]); if (trail.length > 900) trail.shift();
+        draw(); update();
+      } else {
+        last = null;
+      }
+      requestAnimationFrame(frame);
+    }
+
+    slider.addEventListener('input', function () {
+      v = slider.value / 100; out.textContent = slider.value + '% of light'; reset();
+    });
+    root.querySelector('.mc-reset').addEventListener('click', reset);
+    playBtn.addEventListener('click', function () {
+      running = !running; playBtn.textContent = running ? 'Pause' : 'Play';
+    });
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      running = false; playBtn.textContent = 'Play';
+    }
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(function () { size(); reset(); }).observe(cv);
+    } else {
+      window.addEventListener('resize', function () { size(); reset(); });
+    }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(root);
+    }
+    size(); reset();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
+    requestAnimationFrame(frame);
+  }
+
+  function initStepper(root) {
+    var caps = [
+      'Start. Both messengers are on the floor. Each ceiling is 4 steps up.',
+      '1 step each. The 30% messenger climbed 0.95. The 80% messenger climbed only 0.6, because most of its step went into keeping up with its faster train.',
+      '2 steps each. 30% has climbed 1.9. 80% has climbed 1.2.',
+      '3 steps each. 30% has climbed 2.9. 80% has climbed 1.8.',
+      '4 steps each. A clock standing still would be done by now. 30% is almost there at 3.8. 80% is only at 2.4, a bit past halfway.',
+      'The 30% messenger reached the ceiling after 4.2 steps. Its tick is done. The 80% messenger has climbed 3 of 4.',
+      '6 steps. The 80% messenger has climbed 3.6. Still not there.',
+      'The 80% messenger reaches the ceiling after 6.7 steps. Same messenger, same speed, same 4 steps up: one tick took 4.2 steps at 30% and 6.7 steps at 80%.'
+    ];
+    var U = 36, T = 7, t = 0;
+    var trains = [{ v: 0.3, cx: 55, k: 'a' }, { v: 0.8, cx: 405, k: 'b' }];
+    trains.forEach(function (o) {
+      o.r = Math.sqrt(1 - o.v * o.v); o.done = 4 / o.r;
+      o.car = root.querySelector('.mc-car-' + o.k);
+      o.tr = root.querySelector('.mc-trail-' + o.k);
+      o.dot = root.querySelector('.mc-dot-' + o.k);
+      o.run = root.querySelector('.mc-run-' + o.k);
+      o.up = root.querySelector('.mc-up-' + o.k);
+      o.ok = root.querySelector('.mc-done-' + o.k);
+    });
+    var cap = root.querySelector('.mc-caption'), pos = root.querySelector('.mc-pos');
+    var back = root.querySelector('.mc-back'), next = root.querySelector('.mc-next');
+    function f1(x) { return Math.abs(x - Math.round(x)) < 0.005 ? String(Math.round(x)) : x.toFixed(1); }
+    function render() {
+      trains.forEach(function (o) {
+        var s = Math.min(t, o.done), fx = o.v * s * U, fy = o.r * s * U;
+        o.car.setAttribute('x', o.cx - 25 + fx);
+        o.dot.setAttribute('cx', o.cx + fx); o.dot.setAttribute('cy', 250 - fy);
+        o.tr.setAttribute('x2', o.cx + fx); o.tr.setAttribute('y2', 250 - fy);
+        o.run.textContent = f1(s);
+        o.up.textContent = f1(o.r * s > 3.995 ? 4 : o.r * s);
+        o.ok.textContent = t >= o.done ? 'Tick done at ' + o.done.toFixed(1) + ' steps' : '';
+      });
+      cap.textContent = caps[t];
+      pos.textContent = 'Moment ' + t + ' of ' + T;
+      back.disabled = t === 0; next.disabled = t === T;
+    }
+    next.addEventListener('click', function () { if (t < T) { t++; render(); } });
+    back.addEventListener('click', function () { if (t > 0) { t--; render(); } });
+    render();
+  }
+
+  var widgets = document.querySelectorAll('.mc-widget');
+  for (var i = 0; i < widgets.length; i++) {
+    var kind = widgets[i].getAttribute('data-mc');
+    if (kind === 'stepper') initStepper(widgets[i]);
+    else if (CLOCK_VIEWS[kind]) initClock(widgets[i]);
+  }
+})();
+</script>
+</body>
+</html>
